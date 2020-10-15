@@ -1,22 +1,20 @@
 ---
-heading: Venez à l'auto-école Sainte-Clotilde
+heading: Nos différentes formules code et conduite
 path: /products
 templateKey: product-page
 title: Our Coffee
 image: /img/jumbotron.jpg
-description: Deux moniteurs diplômés et à l'écoute sont à votre disposition et
-  mettent tout en œuvre pour vous accompagner vers l'obtention de votre permis
-  de conduire. Pour tous renseignements complémentaires ou pour une inscription,
-  venez nous rencontrer tout près de Saint-Denis.
+description: "Retrouvez une large gamme de formule allant d'une formule simple
+  préparant à l'examen théorique du code de la route aux formules complètes
+  combinant code et conduite, sans oublier celles plus spécifiques. "
 intro:
   blurbs:
-    - image: /img/coffee.png
-      text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
+    - image: /img/animat-checkmark-color.gif
+      text: Love a great cup of coffee, but never knew how to make one? Bought a fancy
+        new Chemex but have no clue how to use it? Don't worry, we’re here to
+        help. You can schedule a custom 1-on-1 consultation with our baristas to
+        learn anything you want to know about coffee roasting and brewing. Email
+        us or call the store for details.
     - image: /img/coffee-gear.png
       text: >
         We offer a small, but carefully curated selection of brewing gear and
