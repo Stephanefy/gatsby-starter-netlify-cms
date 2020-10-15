@@ -1,21 +1,17 @@
 ---
 templateKey: index-page
 title: Great coffee with a conscience
-image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+image: /img/samuele-errico-piccarini-unsplash.jpg
+heading: L'auto-école possède également un label qualité.
+subheading: L'apprentissage de la sécurité routière et de la conduite sur l'île de La Réunion
 mainpitch:
-  title: Why Kaldi
+  title: Passer son permis de voiture à Sainte-Clotilde
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Vous cherchez une auto-école sur l'île de La Réunion ? L'auto-école Sainte-Clotilde vous propose différentes formules pour vous préparer au passage du code de la route et du permis de conduire. Jonathan Boutault et Marie-Annick Mounichetty, deux moniteurs expérimentés, vous accompagnent et vous préparent au passage des examens théoriques et pratiques.
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  Le label " Qualité des informations au sein des écoles de conduite" est un label mis en place par le ministre de l'intérieur.
+  Il est censé  garantir la qualité des informations dispensées aux élèves.
+logocpf: /img/logo_ecole_de_conduite_cpf.png   
 intro:
   blurbs:
     - image: /img/coffee.png

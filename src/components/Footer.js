@@ -10,16 +10,24 @@ import vimeo from '../img/social/vimeo.svg'
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
-        <div className="content has-text-centered">
+      <footer className="footer has-background-light">
+        <div className="content has-text-centered mb-0">
           <img
             src={logo}
-            alt="Kaldi"
-            style={{ width: '14em', height: '10em' }}
+            alt="logo"
+            style={{ width: '16em', height: '10em', marginBottom: '-20px' }}
           />
+          <div className="columns is-centered ">
+            <div className="column is-half">
+              <p className=" has-text-centered has-text-dark ">
+              Depuis sa création en 1976 l'auto école Sainte Clotilde assure une formation de qualité. Une équipe dynamique, compétente et sérieuse vous accompagne et se tient à votre disposition grâce à son expérience depuis plus de 25 ans.
+              </p>
+            </div>
+          </div>
         </div>
-        <div className="content has-text-centered has-background-black has-text-white-ter">
-          <div className="container has-background-black has-text-white-ter">
+
+        <div className="content has-text-centered has-background-link has-text-white-ter">
+          <div className="container has-background-link has-text-white-ter">
             <div style={{ maxWidth: '100vw' }} className="columns">
               <div className="column is-4">
                 <section className="menu">

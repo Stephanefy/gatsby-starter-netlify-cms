@@ -36,7 +36,7 @@ export const ProductPageTemplate = ({
           padding: '1rem',
         }}
       >
-        {title}
+        Horaires
       </h2>
     </div>
     <section className="section section--gradient">

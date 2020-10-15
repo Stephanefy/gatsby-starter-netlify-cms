@@ -1,17 +1,20 @@
-@import "~bulma/sass/utilities/initial-variables"
+@import "../../node_modules/bulma/sass/utilities/initial-variables"
 
 // Config vars
 // Kaldi logo brand color: #FD461E
 $kaldi-red: #D64000
 $kaldi-red-invert: #fff
 
-$primary: $kaldi-red
+$primary: #1e90ff
 $primary-invert: $kaldi-red-invert
 $body-color: #333
 $black: #2b2523
 
-.navbar .navbar-menu
-  box-shadow:none !important
+
+
+.navbar
+  height: 8vh
+  z-index: 2
 
 .content .taglist
   list-style: none
@@ -93,6 +96,10 @@ $menu-item-active-background-color:	$kaldi-red-invert
 $menu-list-border-left: 1px solid $kaldi-red-invert
 $menu-label-color: $white-ter
 
+.leaflet-container 
+  height: 400px;
+  width: 100%;
+
 
 .menu-label
   font-size: 1em !important
@@ -123,7 +130,7 @@ $menu-label-color: $white-ter
   margin: 0 1.5em 0 0;
 
 
-@import "~bulma"
+@import "../../node_modules/bulma"
 
 
 // responsiveness

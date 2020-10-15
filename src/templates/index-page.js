@@ -1,10 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
+import logo from '../img/logo.svg'
 
 import Layout from '../components/Layout'
-import Features from '../components/Features'
-import BlogRoll from '../components/BlogRoll'
+import LeafletMap from '../components/Map';
+import illuChoice from '../../static/img/undraw_select_option_y75i.svg'
+import illuCar from '../../static/img/car-illustration.svg';
+
 
 export const IndexPageTemplate = ({
   image,
@@ -13,55 +16,42 @@ export const IndexPageTemplate = ({
   subheading,
   mainpitch,
   description,
+  logocpf,
   intro,
 }) => (
   <div>
     <div
-      className="full-width-image margin-top-0"
+      className="full-width-image"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        backgroundPosition: `top left`,
+        backgroundPosition: `center center`,
         backgroundAttachment: `fixed`,
+        marginTop: '60px',
       }}
     >
       <div
         style={{
           display: 'flex',
-          height: '150px',
+          height: '300px',
           lineHeight: '1',
-          justifyContent: 'space-around',
+          justifyContent: 'center',
           alignItems: 'left',
           flexDirection: 'column',
         }}
       >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {title}
-        </h1>
-        <h3
+        <img src={logo} alt="logo-hero" style={{ width: '30em', margin: "auto"}}/>
+        <h2
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
-            boxShadow:
-              'rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px',
-            backgroundColor: 'rgb(255, 68, 0)',
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
           }}
         >
           {subheading}
-        </h3>
+        </h2>
       </div>
     </div>
     <section className="section section--gradient">
@@ -79,38 +69,109 @@ export const IndexPageTemplate = ({
                   </div>
                 </div>
                 <div className="columns">
-                  <div className="column is-12">
+                  <div className="column is-12 ">
                     <h3 className="has-text-weight-semibold is-size-2">
                       {heading}
                     </h3>
-                    <p>{description}</p>
+                </div>   
+                </div> 
+                    <div className="columns">
+                      <div className="column is-12" style={{ display: "flex", justifyContent:"center"}}>
+                              <img src={!!logocpf.childImageSharp ? logocpf.childImageSharp.fluid.src : logocpf} />
+                      </div>
+                      </div>
+                      <div className="columns is-centered">
+                      <div className="column is-half">
+                          <p className="has-text-centered is-size-5">{description}</p>
+                      </div>
+                    </div>  
+                <div className="columns">
+                  <div className="column">
+                          <h3>Formules adaptées</h3>
+                          <p>
+                            Chaque formule que nous proposons a été pensée pour que l'élève soit préparé et organisé pour l'examen du permis B dans les meilleures conditions et les meilleurs délais.
+                          </p>
+                          <ul style={{ listStyleType: "none"}}>
+                            <li>Formules code</li>
+                            <li>Formule code et conduite(30h)</li>
+                            <li>Formule conduite supervisée</li>
+                            <li>Formule étudiante</li>
+                            <li>Formule AAC</li>
+                          </ul>
+                  </div>
+                  <div className="column is-half">
+                      <img src={illuChoice} alt="divers formules" width="400"/>
                   </div>
                 </div>
-                <Features gridItems={intro.blurbs} />
+                <div className="columns">
+                  <div className="column">
+                  <img src={illuCar} alt="divers formules" width="400"/>
+                  </div>
+                  <div className="column is-half">
+                  <h3>Apprendre à conduire au meilleur prix près de Saint-Denis</h3>
+                          <p>
+                          Code de la route, permis B ou encore conduite accompagnée... Passez votre permis de conduire dans des conditions optimales près de votre domicile à Sainte-Clotilde et dans ses environs. Faites confiance à nos moniteurs sérieux, diplômés, disponibles et à l'écoute. Pour connaître toutes les modalités d'inscription, n'hésitez pas à venir nous rencontrer à l'auto-école ou à nous contacter par e-mail ou par téléphone.
+                  </p>
+                  </div>
+                </div>      
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
-                      See all products
+                      En savoir plus
                     </Link>
                   </div>
                 </div>
                 <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
+                  <h3 className="has-text-weight-semibold is-size-2 has-text-centered">
+                    Nous vous garantissons :
                   </h3>
-                  <BlogRoll />
+                  </div>
+                  <div className="columns is-centered">
+                    <div className="column has-text-centered">
+                      <p className="heading is-size-5">Inscriptions faciles</p>
+                      <p className="title">
+                   <span className="icon has-text-info">
+                    <i className="fas fa-mouse"></i>
+                  </span></p>
+                  </div>
+                  <div className="column has-text-centered">
+                      <p className="heading is-size-5">Disponibilité</p>
+                      <p className="title">
+                      <span className="icon has-text-info">
+                    <i className="fas fa-calendar-check"></i>
+                      </span>
+                      </p>
+                      
+                  </div>
+                  <div className="column has-text-centered">
+                      <p className="heading is-size-5">Écoute</p>
+                      <p className="title">     <span className="icon has-text-info">
+                    <i className="fas fa-grin"></i>
+                      </span></p>
+                  </div>
+                  <div className="column has-text-centered">
+                      <p className="heading is-size-5">Résultats</p>
+                      <p className="title"> <span className="icon has-text-info">
+                    <i className="fas fa-thumbs-up"></i>
+                      </span></p>
+                </div>
+                  </div>
+          
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/blog">
-                      Read more
+                      Contactez-nous
                     </Link>
                   </div>
-                </div>
+                  
+                
               </div>
             </div>
           </div>
         </div>
+        
       </div>
     </section>
+        <LeafletMap />                    
   </div>
 )
 
@@ -121,6 +182,7 @@ IndexPageTemplate.propTypes = {
   subheading: PropTypes.string,
   mainpitch: PropTypes.object,
   description: PropTypes.string,
+  logocpf: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
@@ -138,6 +200,7 @@ const IndexPage = ({ data }) => {
         subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
         description={frontmatter.description}
+        logocpf={frontmatter.logocpf}
         intro={frontmatter.intro}
       />
     </Layout>
@@ -173,6 +236,13 @@ export const pageQuery = graphql`
           description
         }
         description
+        logocpf {
+          childImageSharp{
+            fluid(maxWidth: 400, quality: 100){
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
         intro {
           blurbs {
             image {
