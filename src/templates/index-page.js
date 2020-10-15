@@ -75,7 +75,7 @@ export const IndexPageTemplate = ({
                     </h3>
                 </div>   
                 </div> 
-                    <div className="columns">
+                    <div className="columns block">
                       <div className="column is-12" style={{ display: "flex", justifyContent:"center"}}>
                               <img src={!!logocpf.childImageSharp ? logocpf.childImageSharp.fluid.src : logocpf} />
                       </div>
@@ -85,7 +85,8 @@ export const IndexPageTemplate = ({
                           <p className="has-text-centered is-size-5">{description}</p>
                       </div>
                     </div>  
-                <div className="columns">
+                    <hr style={{ width: "30%", margin: '5em auto', border: '2px solid #BD1A1A'}}/>
+                <div className="columns block">
                   <div className="column">
                           <h3>Formules adaptées</h3>
                           <p>
@@ -103,6 +104,8 @@ export const IndexPageTemplate = ({
                       <img src={illuChoice} alt="divers formules" width="400"/>
                   </div>
                 </div>
+                <hr style={{ width: "30%", margin: '5em auto', border: '2px solid #BD1A1A'}}/>
+
                 <div className="columns">
                   <div className="column">
                   <img src={illuCar} alt="divers formules" width="400"/>
@@ -114,7 +117,7 @@ export const IndexPageTemplate = ({
                   </p>
                   </div>
                 </div>      
-                <div className="columns">
+                <div className="columns block">
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/products">
                       En savoir plus
@@ -145,7 +148,7 @@ export const IndexPageTemplate = ({
                   </div>
                   <div className="column has-text-centered">
                       <p className="heading is-size-5">Écoute</p>
-                      <p className="title">     <span className="icon has-text-info">
+                      <p className="title"> <span className="icon has-text-info">
                     <i className="fas fa-grin"></i>
                       </span></p>
                   </div>
