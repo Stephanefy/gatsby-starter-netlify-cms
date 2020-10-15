@@ -1,13 +1,12 @@
 ---
-heading: Venez à l'auto-école Sainte-Clotilde
+heading: Nos différentes formules code et conduite
 path: /products
 templateKey: product-page
 title: Our Coffee
 image: /img/jumbotron.jpg
-description: Deux moniteurs diplômés et à l'écoute sont à votre disposition et
-  mettent tout en œuvre pour vous accompagner vers l'obtention de votre permis
-  de conduire. Pour tous renseignements complémentaires ou pour une inscription,
-  venez nous rencontrer tout près de Saint-Denis.
+description: "Retrouvez une large gamme de formule allant d'une formule simple
+  préparant à l'examen théorique du code de la route aux formules complètes
+  combinant code et conduite, sans oublier celles plus spécifiques. "
 intro:
   blurbs:
     - image: /img/animat-checkmark-color.gif
