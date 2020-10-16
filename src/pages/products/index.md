@@ -12,7 +12,7 @@ code_pricing:
   description: Trois formules pour l'apprentissage et la maîtrise du code de la route
   plans:
     - plan: Code 3 mois
-      price: 180¢
+      price: 180€
       description: code avec moniteur en salle pour 3 mois
       items:
         - code en salle
