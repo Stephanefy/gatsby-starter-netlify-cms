@@ -31,6 +31,35 @@ code_pricing:
         - 1 livre de code
         - 1 cahier d'exercice
         - Frais accompagnement à l'examen code
+conduite_pricing:
+  plans:
+    - plan: Code + conduite 30h
+      price: 980€
+      description: Forfait basique
+      items:
+        - Frais administratif
+        - code 3 mois avec enseignant
+        - 30h de conduite
+        - frais d'accompagnement à l'examen théorique général
+        - frais d'accompagnement examen pratique
+    - plan: Conduite supervisée
+      price: 980€
+      description: Forfait conduite supervisée
+      items:
+        - Frais administratif
+        - code 3 mois avec enseignant
+        - 30h de conduite
+        - frais d'accompagnement à l'examen théorique général
+        - frais d'accompagnement examen pratique
+    - plan: Spéciale étudiant
+      price: 1100 €
+      description: forait étudiant
+      items:
+        - Frais administratif
+        - code 3 mois avec enseignant
+        - 30h de conduite
+        - frais d'accompagnement à l'examen théorique général
+        - frais d'accompagnement examen pratique
 main:
   heading: Formules complètes
   description: >
