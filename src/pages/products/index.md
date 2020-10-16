@@ -23,6 +23,14 @@ code_pricing:
       items:
         - prépacode
         - livre de code
+    - plan: "Code 6 mois "
+      price: 290€
+      description: "Apprenez le code de la route pendant 6 mois  "
+      items:
+        - 6 mois code libre (heures de bureau)
+        - 1 livre de code
+        - 1 cahier d'exercice
+        - Frais accompagnement à l'examen code
 main:
   heading: Great coffee with no compromises
   description: >
