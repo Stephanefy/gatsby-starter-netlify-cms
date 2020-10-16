@@ -235,16 +235,6 @@ export const productPageQuery = graphql`
               }
             }
           }
-          composed_pricing {
-          heading
-          description
-          plans {
-            description
-            items
-            plan
-            price
-          }
-        }
           image2 {
             alt
             image {
@@ -264,6 +254,16 @@ export const productPageQuery = graphql`
                 }
               }
             }
+          }
+        }
+        composed_pricing {
+          heading
+          description
+          plans {
+            description
+            items
+            plan
+            price
           }
         }
         testimonials {
