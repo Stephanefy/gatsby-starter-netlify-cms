@@ -2,7 +2,7 @@
 heading: Nos différentes formules code et conduite
 path: /products
 templateKey: product-page
-title: Our Coffee
+title: Formules
 image: /img/jumbotron.jpg
 description: "Retrouvez une large gamme de formule allant d'une formule simple
   préparant à l'examen théorique du code de la route aux formules complètes
