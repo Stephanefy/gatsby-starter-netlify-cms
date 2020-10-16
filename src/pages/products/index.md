@@ -84,9 +84,10 @@ testimonials:
 full_image: /img/products-full-width.jpg
 pricing:
   heading: Conduite accompagnée(AAC)
-  description: We make it easy to make great coffee a part of your life. Choose
-    one of our monthly subscription plans to receive great coffee at your
-    doorstep each month. Contact us about more details and payment info.
+  description: La conduite accompagnée est aussi appelée Apprentissage Anticipé de
+    la Conduite (AAC), car elle est accessible à partir de 15 ans. C’est en
+    effet l’âge minimum pour passer le code de la route pour un candidat inscrit
+    en conduite accompagnée, contre 17 ans en formation classique.
   plans:
     - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
       items:
