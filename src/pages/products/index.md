@@ -17,6 +17,12 @@ code_pricing:
       items:
         - code en salle
         - livret de code
+    - plan: Code en ligne 6 mois
+      price: 180€
+      description: Accès à prépacode pendant 6 mois
+      items:
+        - prépacode
+        - livre de code
 main:
   heading: Great coffee with no compromises
   description: >
