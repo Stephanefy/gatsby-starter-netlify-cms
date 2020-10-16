@@ -5,7 +5,7 @@ import { v4 } from 'uuid'
 const Testimonials = ({ testimonials }) => (
   <div>
     {testimonials.map((testimonial) => (
-      <article key={v4()} className="message">
+      <article key={v4()} className="message" style={{marginTop: '1.5rem'}}>
         <div className="message-body">
           {testimonial.quote}
           <br />

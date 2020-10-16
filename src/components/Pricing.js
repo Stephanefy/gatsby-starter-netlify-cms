@@ -5,9 +5,9 @@ const Pricing = ({ data }) => (
  
   <div className="columns">
     {data.map((price) => (
-      <div className="card">
-      <div className="card-content">
-      <div key={price.plan} className="column ">
+      <div className="card" style={{margin: '0 0.5rem'}}>
+      <div className="card-content" style={{padding: '0 0rem'}}>
+      <div key={price.plan} className="column block mx-4">
         <section className="section">
           <h4 className="has-text-centered has-text-weight-semibold">
             {price.plan}
