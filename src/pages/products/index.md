@@ -91,11 +91,14 @@ pricing:
   plans:
     - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
       items:
-        - 3 lbs of coffee per month
-        - Green or roasted beans"
-        - One or two varieties of beans"
-      plan: Small
-      price: "50"
+        - Code 3 mois (avec enseignant)
+        - 20 heures de conduite
+        - Frais accompagnement à l'examen code
+        - Frais accompagnement à l'examen de conduite
+        - Rendez-vous préalable Kit pédagogique (livre de code + livret
+          d'apprentissage)
+      plan: Conduite accompagnée
+      price: 1080 €
 intro:
   blurbs:
     - image: /img/animat-checkmark-color.gif
