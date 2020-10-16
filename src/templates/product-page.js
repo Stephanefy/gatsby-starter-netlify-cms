@@ -14,7 +14,6 @@ export const ProductPageTemplate = ({
   code_pricing,
   intro,
   main,
-  composed_pricing,
   testimonials,
   fullImage,
   pricing,
@@ -65,13 +64,6 @@ export const ProductPageTemplate = ({
                   </h3>
                   <p>{main.description}</p>
                 </div>
-                <div className="column is-12 is-offset-one-quarter">
-              <h2 className="has-text-weight-semibold is-size-2">
-                {composed_pricing.heading}
-              </h2>
-              <p className="is-size-5">{composed_pricing.description}</p>
-              <Pricing data={composed_pricing.plans} />
-            </div>
               </div>
               <div className="tile is-ancestor">
                 <div className="tile is-vertical">
@@ -138,11 +130,6 @@ ProductPageTemplate.propTypes = {
     image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
     image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   }),
-  composed_pricing: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
-    plans: PropTypes.array,
-  }),
   testimonials: PropTypes.array,
   fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   pricing: PropTypes.shape({
@@ -165,7 +152,6 @@ const ProductPage = ({ data }) => {
         code_pricing={frontmatter.code_pricing}
         intro={frontmatter.intro}
         main={frontmatter.main}
-        composed_pricing={frontmatter.composed_pricing}
         testimonials={frontmatter.testimonials}
         fullImage={frontmatter.full_image}
         pricing={frontmatter.pricing}
@@ -254,16 +240,6 @@ export const productPageQuery = graphql`
                 }
               }
             }
-          }
-        }
-        composed_pricing {
-          heading
-          description
-          plans {
-            description
-            items
-            plan
-            price
           }
         }
         testimonials {
