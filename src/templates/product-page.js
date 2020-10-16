@@ -12,6 +12,7 @@ export const ProductPageTemplate = ({
   title,
   heading,
   description,
+  code_pricing,
   intro,
   main,
   testimonials,
@@ -113,6 +114,11 @@ ProductPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   description: PropTypes.string,
+  code_pricing: PropTypes.shape({
+    heading: PropTypes.string,
+    description: PropTypes.string,
+    plans: PropTypes.array,
+  }),
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
@@ -142,6 +148,7 @@ const ProductPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         description={frontmatter.description}
+        code_pricing={frontmatter.code_pricing}
         intro={frontmatter.intro}
         main={frontmatter.main}
         testimonials={frontmatter.testimonials}
@@ -176,6 +183,16 @@ export const productPageQuery = graphql`
         }
         heading
         description
+        code_pricing {
+          heading
+          description
+          plans {
+            description
+            items
+            plan
+            price
+          }
+        }
         intro {
           blurbs {
             image {
