@@ -4,21 +4,21 @@ import PropTypes from 'prop-types'
 const Pricing = ({ data }) => (
  
   <div className="columns">
-    {data.map((price) => (
+  {data.map((price) => (
       <div className="card" style={{margin: '0 0.5rem'}}>
       <div className="card-content" style={{padding: '0 0rem'}}>
-      <div key={price.plan} className="column block mx-4">
+      <div key={price.plan} className="column">
         <section className="section">
-          <h4 className="has-text-centered has-text-weight-semibold">
+          <h4 className="has-text-centered has-text-weight-semibold has-text-info">
             {price.plan}
           </h4>
-          <h2 className="is-size-1 has-text-weight-bold has-text-primary has-text-centered">
+          <h2 className="is-size-1 has-text-weight-bold has-text-primary has-text-centered has-text-info">
             {price.price}
           </h2>
-          <p className="has-text-weight-semibold">{price.description}</p>
+          <p className="has-text-weight-semibold is-size-5 has-text-info">{price.description}</p>
           <ul>
             {price.items.map((item) => (
-              <li key={item} className="is-size-5">
+              <li key={item} className="is-size-6">
                 {item}
               </li>
             ))}
@@ -29,6 +29,7 @@ const Pricing = ({ data }) => (
 
     </div>
     ))}
+
   </div>
 
 

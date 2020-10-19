@@ -27,6 +27,7 @@ export const ProductPageTemplate = ({
         })`,
       }}
     >
+    
       <h2
         className="has-text-weight-bold is-size-1"
         style={{
@@ -79,11 +80,76 @@ export const ProductPageTemplate = ({
                   })`,
                 }}
               />
-              <h2 className="has-text-weight-semibold is-size-2">
-                {pricing.heading}
+                <hr style={{ width: "30%", margin: '5em auto', border: '2px solid #BD1A1A'}}/>
+
+                <h2 className="has-text-weight-semibold is-size-2 has-text-centered">
+                    {pricing.heading}
+                  </h2>
+              
+              
+                <div className="columns">
+                <div className="column is-half">
+                <p className="is-size-5">{pricing.description}</p>
+                <p className="is-size-6">Le parcours de formation proposé permettra de faire progresser l’élève dans sa formation pour l’amener en situation de réussite aux examens du permis de conduire.
+Au travers de la signature du contrat, le candidat s’engage à suivre ce parcours de formation :</p>
+                </div>
+                <div className="column is-7">
+                  <div>
+                      <Pricing data={pricing.plans} />
+                  </div>
+                </div>
+              </div>
+              <hr style={{ width: "30%", margin: '5em auto', border: '2px solid #BD1A1A'}}/>
+
+              <h2 className="has-text-centered is-size-2 has-text-weight-semibold">
+                  Les modalités de paiement
               </h2>
-              <p className="is-size-5">{pricing.description}</p>
-              <Pricing data={pricing.plans} />
+              <div className="columns is-centered">
+                  <div className="column has-text-centered">
+                      <p className="heading is-size-5 has-text-weight-semibold">Espèces</p>
+                      <p className="title">
+                      <span className="icon has-text-info">
+                    <i className="fas fa-money-bill-alt fa-2x"></i>
+                      </span>
+                      </p>
+                      <p>
+                      1/4 à l'inscription puis 3 fois sans frais dès le début de la formation
+                      </p>
+                      
+                  </div>
+                  <div className="column has-text-centered">
+                      <p className="heading is-size-5 has-text-weight-semibold">Chèques</p>
+                      <p className="title"> <span className="icon has-text-info">
+                    <i className="fas fa-money-check fa-2x"></i>
+                      </span>
+                      </p>
+                      <p>
+                      3 ou 4 fois 
+                      </p>
+                  </div>
+                  <div className="column has-text-centered">
+                      <p className="heading is-size-5 has-text-weight-semibold">CPF</p>
+                      <p className="title"> <span className="icon has-text-info">
+                    <i className="fas fa-file-invoice-dollar fa-2x"></i>
+                      </span></p>
+                      <p>
+                      Les candidats au permis B peuvent mobiliser les heures inscrites sur le compte personnel de formation (CPF) pour financer en totalité ou en partie les coûts liés au passage du Code ou aux leçons de conduite.
+Cette mesure vise à faciliter l'accès à l'emploi aux jeunes et aux personnes en difficultés.
+
+                      </p>
+                </div>
+                  </div>
+                  <h2 className="has-text-centered is-size-2 has-text-weight-semibold my-6">
+                  L'AUTO ECOLE A SOUSCRIT A UNE GARANTIE FINANCIÈRE
+                  </h2>
+                  <p className='has-text-centered' style={{marginTop:'5rem'}}><span className="icon has-text-info">
+                  <i class="fas fa-hand-holding-usd fa-6x"></i>
+                  </span></p>
+                  <p className="is-size-4 has-text-centered">
+              
+                  L'auto-école à souscrit à cette garantie financière afin de la sécuriser la formation de ses candidats.
+                  En cas de défaillance financière de l'auto-école, le candidat peut se faire rembourser les prestations non consommées en s'adressant à notre assureur.
+                  </p>
             </div>
           </div>
         </div>

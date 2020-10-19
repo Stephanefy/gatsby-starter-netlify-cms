@@ -19,7 +19,7 @@ const Footer = class extends React.Component {
           />
           <div className="columns is-centered ">
             <div className="column is-half">
-              <p className=" has-text-centered has-text-dark ">
+              <p className=" has-text-centered has-text-dark is-size-4">
               Depuis sa création en 1976 l'auto école Sainte Clotilde assure une formation de qualité. Une équipe dynamique, compétente et sérieuse vous accompagne et se tient à votre disposition grâce à son expérience depuis plus de 25 ans.
               </p>
             </div>

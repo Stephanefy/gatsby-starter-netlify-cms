@@ -41,7 +41,18 @@ export const IndexPageTemplate = ({
           flexDirection: 'column',
         }}
       >
-        <img src={logo} alt="logo-hero" style={{ width: '30em', margin: "auto"}}/>
+      <h2
+        className="has-text-weight-bold is-size-1"
+        style={{
+          backgroundColor: '#BD1A1A',
+          boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
+          backgroundColor: '#f40',
+          color: 'white',
+          padding: '1rem',
+        }}
+      >
+        {title}
+      </h2>
         <h2
           className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
           style={{
