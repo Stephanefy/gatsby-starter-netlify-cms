@@ -1,17 +1,18 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: Auto-école Sainte-Clotilde
 image: /img/samuele-errico-piccarini-unsplash.jpg
 heading: L'auto-école possède également un label qualité.
-subheading: L'apprentissage de la sécurité routière et de la conduite sur l'île de La Réunion
+subheading: L'apprentissage de la sécurité routière et de la conduite sur l'île
+  de La Réunion
 mainpitch:
   title: Passer son permis de voiture à Sainte-Clotilde
   description: >
-    Vous cherchez une auto-école sur l'île de La Réunion ? L'auto-école Sainte-Clotilde vous propose différentes formules pour vous préparer au passage du code de la route et du permis de conduire. Jonathan Boutault et Marie-Annick Mounichetty, deux moniteurs expérimentés, vous accompagnent et vous préparent au passage des examens théoriques et pratiques.
-description: >-
-  Le label " Qualité des informations au sein des écoles de conduite" est un label mis en place par le ministre de l'intérieur.
-  Il est censé  garantir la qualité des informations dispensées aux élèves.
-logocpf: /img/logo_ecole_de_conduite_cpf.png   
+    Vous cherchez une auto-école sur l'île de La Réunion ? L'auto-école
+    Sainte-Clotilde vous propose différentes formules pour vous préparer au
+    passage du code de la route et du permis de conduire. Jonathan Boutault et
+    Marie-Annick Mounichetty, deux moniteurs expérimentés, vous accompagnent et
+    vous préparent au passage des examens théoriques et pratiques.
 intro:
   blurbs:
     - image: /img/coffee.png
@@ -47,6 +48,10 @@ intro:
     java’s origin and support the farmers that grew it. We take coffee
     production, roasting and brewing seriously and we’re glad to pass that
     knowledge to anyone. This is an edit via identity...
+logocpf: /img/logo_ecole_de_conduite_cpf.png
+description: Le label " Qualité des informations au sein des écoles de conduite"
+  est un label mis en place par le ministre de l'intérieur. Il est
+  censé  garantir la qualité des informations dispensées aux élèves.
 main:
   heading: Great coffee with no compromises
   description: >
