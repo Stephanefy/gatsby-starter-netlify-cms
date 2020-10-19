@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-import logo from '../img/logo.svg'
 
 import Layout from '../components/Layout'
 import LeafletMap from '../components/Map';
