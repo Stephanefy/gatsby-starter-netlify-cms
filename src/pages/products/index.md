@@ -3,7 +3,7 @@ heading: Nos différentes formules code et conduite
 path: /products
 templateKey: product-page
 title: Formules
-image: /img/jumbotron.jpg
+image: /img/karsten-wurth-rafblrbne3o-unsplash.jpg
 description: "Retrouvez une large gamme de formule allant d'une formule simple
   préparant à l'examen théorique du code de la route aux formules complètes
   combinant code et conduite, sans oublier celles plus spécifiques. "
@@ -67,7 +67,7 @@ main:
     complète aux examens théorique et pratique.
   image1:
     alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
+    image: /img/alexis-antoine-ns6ugws2xcm-unsplash.jpg
   image2:
     alt: A green cup of a coffee on a wooden table
     image: /img/products-grid2.jpg
