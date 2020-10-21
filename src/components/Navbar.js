@@ -41,7 +41,7 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+              <img src={logo} alt="logo" style={{ width: '200px', maxHeight:'3rem' }} />
             </Link>
             {/* Hamburger menu */}
             <div
@@ -58,20 +58,30 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
+            <div className="navbar-end">
               <Link className="navbar-item" to="/">
                 Accueil
               </Link>
               <Link className="navbar-item" to="/products">
                 Formules
               </Link>
-              <Link className="navbar-item" to="/blog">
-                Formations
-              </Link>
+              <div className="navbar-item has-dropdown is-hoverable">
+                <Link className="navbar-link" to="/blog">
+                  Formations
+                </Link>         
+                <div className="navbar-dropdown">
+                    <Link className="navbar-item" to="/formation-b">
+                      Formation B
+                    </Link>
+                    <Link className="navbar-item" to="/formation-b78">
+                      Formation Boite auto
+                    </Link>
+                    <Link className="navbar-item" to="/formation-aac">
+                      Conduite accompagnée et supervisée
+                    </Link>
+                </div>
+              </div>
               <Link className="navbar-item" to="/contact">
-                Formation
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
                 Contact
               </Link>
             </div> 

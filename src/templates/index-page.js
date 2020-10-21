@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import LeafletMap from '../components/Map';
 import illuChoice from '../../static/img/undraw_select_option_y75i.svg'
 import illuCar from '../../static/img/car-illustration.svg';
+import headerWave from '../../static/img/index-wave-grey.svg'
 
 
 export const IndexPageTemplate = ({
@@ -28,6 +29,7 @@ export const IndexPageTemplate = ({
         backgroundPosition: `center center`,
         backgroundAttachment: `fixed`,
         marginTop: '60px',
+        zIndex:0,
       }}
     >
       <div
@@ -40,31 +42,22 @@ export const IndexPageTemplate = ({
           flexDirection: 'column',
         }}
       >
-      <h2
-        className="has-text-weight-bold is-size-1"
+      <h1
+        className="has-text-weight-bold is-size-1 has-text-centered"
         style={{
-          backgroundColor: '#BD1A1A',
-          boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-          backgroundColor: '#f40',
+          backgroundColor: '#971515',
+          boxShadow: '0.5rem 0 0 #971515, -0.5rem 0 0 #971515',
           color: 'white',
           padding: '1rem',
         }}
       >
         {title}
-      </h2>
-        <h2
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            color: 'white',
-            lineHeight: '1',
-            padding: '0.25em',
-          }}
-        >
-          {subheading}
-        </h2>
+      </h1>
+  
       </div>
     </div>
-    <section className="section section--gradient">
+    <section className="section section--gradient"
+    >
       <div className="container">
         <div className="section">
           <div className="columns">

@@ -22,15 +22,16 @@ export const FormationBPageTemplate = () => {
     <h1 className="is-size-1 has-text-weight-semibold has-text-centered">
             Formations B
         </h1>
-        <p className="is-size-6">
+        <p className="column is-10 is-size-6 has-text-centered" style={{margin: 'auto'}}>
         Le résultat de l’évaluation sera une note ou une lettre, qui nous permettra de déterminer, selon une grille pré-établi, un volume de formation prévisionnel :
 Nous pourrons alors vous proposer un parcours de formation adapté, personnalisé et accompagné d’une proposition détaillée et chiffrée.
 Nous proposons systématiquement à nos élèves toutes les filières de formation possibles (Apprentissage Anticipé de la Conduite, Conduite Supervisée, B traditionnel, Boite Automatique) et procédons à un conseil personnalisé en tenant compte des capacités et motivations de chacun dans le choix de leur mode d’apprentissage.
 A la suite de cette évaluation, une pochette pédagogique contenant les différents documents administratifs, contractuels et informatifs sera remise à la signature du contrat, sans oublier, le cas échéant, les différents supports pédagogiques (livre de code, fiche des vérifications, livret d’apprentissage etc.).
         </p>
     </div>
-
-        <div className="container is-size-1">
+    <hr style={{ width: "30%", margin: '5em auto', border: '2px solid #BD1A1A'}}/>
+    
+        <div className="column is-10 is-offset-1 is-size-1">
             <Steps direction="vertical" size="large" current={current} onChange={onChange}>
                 <Step title="I/ évaluation de départ" description="Cela permettra de déterminer un volume d'heures approximatifs à faire avant le passage du permis.
 Cette heure d'évaluation est une prise de contact entre l'élève et l'enseignement." />
@@ -46,24 +47,25 @@ Il réalise ainsi un inventaire des points positifs et négatifs qui seront par 
 
 Votre résultat ne sera disponible que 48 heures après le passage de l'examen (week-end et jours fériés non inclus.)" />
             </Steps>
-        </div>
-        <div className="columns is-10">
-        <div className="column is-two-fifths">
-        <Result
-        status="success"
-        title="Vous êtes réçu"
-        subTitle="La mention 'FAVORABLE' est indiquée en bas du Certificat d'examen du permis de conduire (CEPC)"
+            </div>
+        <div className="columns is-centered">
+            <div className="column is-3">
+            <Result
+            status="success"
+            title="Vous êtes réçu"
+            subTitle="La mention 'FAVORABLE' est indiquée en bas du Certificat d'examen du permis de conduire (CEPC)"
+        
+            />
+            </div>
+            <div className="column is-3">
+            <Result
+            status="error"
+            title="Vous n'êtes pas reçu"
+            subTitle="La mention 'INSUFFISANT' est indiquée en bas de votre bilan de compétences. Les raisons de l’échec et des pistes d’amélioration sont indiquées dans le document."/>
+            </div>
+        </div>    
        
-        />
-        </div>
-        <div className="column is-two-fifths">
-        <Result
-        status="error"
-        title="Vous n'êtes pas reçu"
-        subTitle="La mention 'INSUFFISANT' est indiquée en bas de votre bilan de compétences. Les raisons de l’échec et des pistes d’amélioration sont indiquées dans le document."/>
-        </div>
 
-        </div>
 
     </section>
 

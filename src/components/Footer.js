@@ -26,30 +26,30 @@ const Footer = class extends React.Component {
           </div>
         </div>
 
-        <div className="content has-text-centered has-background-link has-text-white-ter">
-          <div className="container has-background-link has-text-white-ter">
+        <div className="content has-text-centered has-background-info has-text-white-ter">
+          <div className="container has-background-info has-text-white-ter">
             <div style={{ maxWidth: '100vw' }} className="columns">
               <div className="column is-4">
                 <section className="menu">
                   <ul className="menu-list">
                     <li>
                       <Link to="/" className="navbar-item">
-                        Home
+                        Accueil
                       </Link>
                     </li>
                     <li>
                       <Link className="navbar-item" to="/about">
-                        About
+                        l'Auto-école
                       </Link>
                     </li>
                     <li>
                       <Link className="navbar-item" to="/products">
-                        Products
+                        Formules
                       </Link>
                     </li>
                     <li>
                       <Link className="navbar-item" to="/contact/examples">
-                        Form Examples
+                        Contact
                       </Link>
                     </li>
                     <li>
