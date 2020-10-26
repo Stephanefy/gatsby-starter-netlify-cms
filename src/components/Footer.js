@@ -28,7 +28,7 @@ const Footer = class extends React.Component {
 
         <div className="content has-text-centered has-background-info has-text-white-ter">
           <div className="container has-background-info has-text-white-ter">
-            <div style={{ maxWidth: '100vw' }} className="columns">
+            <div style={{ maxWidth: '100vw' }} className="columns is-centered">
               <div className="column is-4">
                 <section className="menu">
                   <ul className="menu-list">
@@ -53,34 +53,29 @@ const Footer = class extends React.Component {
                       </Link>
                     </li>
                     <li>
-                      <a
-                        className="navbar-item"
-                        href="/admin/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Admin
-                      </a>
+                      <Link className="navbar-item" to="/contact/examples">
+                        Réglement intérieur
+                      </Link>
                     </li>
                   </ul>
                 </section>
               </div>
               <div className="column is-4">
-                <section>
-                  <ul className="menu-list">
-                    <li>
-                      <Link className="navbar-item" to="/blog">
-                        Latest Stories
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="navbar-item" to="/contact">
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </section>
-              </div>
+                  <section className='menu'>
+                    <ul className="has-text-centered is-size-5" style={{listStyleType:"none", marginLeft:'0'}}>
+                      <li>
+                      18 RUE LORY LES HAUTS, 97490 STE CLOTILDE
+                      </li>
+                      <li>
+                          02 62 28 46 25
+                      </li>
+                      <li>
+                          adresse e-mail
+                      </li>
+                    </ul>
+
+                  </section>
+                </div>
               <div className="column is-4 social">
                 <a title="facebook" href="https://facebook.com">
                   <img

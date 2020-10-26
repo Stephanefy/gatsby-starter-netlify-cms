@@ -6,7 +6,6 @@ import Layout from '../components/Layout'
 import LeafletMap from '../components/Map';
 import illuChoice from '../../static/img/undraw_select_option_y75i.svg'
 import illuCar from '../../static/img/car-illustration.svg';
-import headerWave from '../../static/img/index-wave-grey.svg'
 
 
 export const IndexPageTemplate = ({
@@ -56,8 +55,7 @@ export const IndexPageTemplate = ({
   
       </div>
     </div>
-    <section className="section section--gradient"
-    >
+    <section className="section section--gradient">
       <div className="container">
         <div className="section">
           <div className="columns">
@@ -90,7 +88,7 @@ export const IndexPageTemplate = ({
                     </div>  
                     <hr style={{ width: "30%", margin: '5em auto', border: '2px solid #BD1A1A'}}/>
                 <div className="columns block">
-                  <div className="column">
+                  <div className="column" className='is-size-6'>
                           <h3>Formules adaptées</h3>
                           <p>
                             Chaque formule que nous proposons a été pensée pour que l'élève soit préparé et organisé pour l'examen du permis B dans les meilleures conditions et les meilleurs délais.
@@ -113,7 +111,7 @@ export const IndexPageTemplate = ({
                   <div className="column">
                   <img src={illuCar} alt="divers formules" width="400"/>
                   </div>
-                  <div className="column is-half">
+                  <div className="column is-half is-size-6">
                   <h3>Apprendre à conduire au meilleur prix près de Saint-Denis</h3>
                           <p>
                           Code de la route, permis B ou encore conduite accompagnée... Passez votre permis de conduire dans des conditions optimales près de votre domicile à Sainte-Clotilde et dans ses environs. Faites confiance à nos moniteurs sérieux, diplômés, disponibles et à l'écoute. Pour connaître toutes les modalités d'inscription, n'hésitez pas à venir nous rencontrer à l'auto-école ou à nous contacter par e-mail ou par téléphone.
@@ -164,7 +162,7 @@ export const IndexPageTemplate = ({
                   </div>
           
                   <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
+                    <Link className="btn" to="/contact">
                       Contactez-nous
                     </Link>
                   </div>

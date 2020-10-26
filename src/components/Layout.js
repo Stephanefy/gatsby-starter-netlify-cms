@@ -5,11 +5,17 @@ import Navbar from '../components/Navbar'
 import './all.sass'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
+import {css} from '@emotion/core';
+
+import "fontsource-nunito";
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
-    <div>
+    <div css={css`
+      font-family: 'Nunito';
+    
+    `}>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
