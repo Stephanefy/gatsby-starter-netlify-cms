@@ -11,7 +11,7 @@ mainpitch:
     Vous cherchez une auto-école sur l'île de La Réunion ? L'auto-école
     Sainte-Clotilde vous propose différentes formules pour vous préparer au
     passage du code de la route et du permis de conduire. Marie Annick
-    Mounichetty et son équipe experimentéen, vous accompagne et vous prépare au
+    Mounichetty et son équipe experimentée, vous accompagne et vous prépare au
     passage des examens théoriques et pratiques.
 intro:
   blurbs:
