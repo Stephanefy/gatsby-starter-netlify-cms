@@ -81,7 +81,7 @@ testimonials:
   - author: Philipp Trommler
     quote: Kaldi is the place to go if you want the best quality coffee. I love
       their stance on empowering farmers and transparency.
-full_image: /img/products-full-width.jpg
+full_image: /img/takahiro-taguchi-_skidriietk-unsplash.jpg
 pricing:
   heading: Conduite accompagnée(AAC)
   description: La conduite accompagnée est aussi appelée Apprentissage Anticipé de
