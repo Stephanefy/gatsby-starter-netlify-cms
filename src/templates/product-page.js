@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 
 export const ProductPageTemplate = ({
@@ -13,8 +12,6 @@ export const ProductPageTemplate = ({
   code_pricing,
   main,
   conduite_pricing,
-  testimonials,
-  fullImage,
   pricing,
 }) => (
   <div className="content">
@@ -68,17 +65,6 @@ export const ProductPageTemplate = ({
                 <div className="column is-12">
               <Pricing data={conduite_pricing.plans} />
             </div>
-              <Testimonials testimonials={testimonials} />
-              <div
-                className="full-width-image-container"
-                style={{
-                  backgroundImage: `url(${
-                    fullImage.childImageSharp
-                      ? fullImage.childImageSharp.fluid.src
-                      : fullImage
-                  })`,
-                }}
-              />
                 <hr style={{ width: "30%", margin: '5em auto', border: '2px solid #BD1A1A'}}/>
 
                 <h2 className="has-text-weight-semibold is-size-2 has-text-centered">
@@ -126,17 +112,6 @@ Au travers de la signature du contrat, le candidat s’engage à suivre ce parco
                       3 ou 4 fois 
                       </p>
                   </div>
-                  <div className="column has-text-centered">
-                      <p className="heading is-size-5 has-text-weight-semibold">CPF</p>
-                      <p className="title"> <span className="icon has-text-info">
-                    <i className="fas fa-file-invoice-dollar fa-2x"></i>
-                      </span></p>
-                      <p>
-                      Les candidats au permis B peuvent mobiliser les heures inscrites sur le compte personnel de formation (CPF) pour financer en totalité ou en partie les coûts liés au passage du Code ou aux leçons de conduite.
-Cette mesure vise à faciliter l'accès à l'emploi aux jeunes et aux personnes en difficultés.
-
-                      </p>
-                </div>
                   </div>
                   <h2 className="has-text-centered is-size-2 has-text-weight-semibold my-6">
                   L'AUTO ECOLE A SOUSCRIT A UNE GARANTIE FINANCIÈRE
@@ -180,7 +155,6 @@ ProductPageTemplate.propTypes = {
     plans: PropTypes.array,
   }),
   testimonials: PropTypes.array,
-  fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   pricing: PropTypes.shape({
     plans: PropTypes.array,
   }),
@@ -200,7 +174,6 @@ const ProductPage = ({ data }) => {
         main={frontmatter.main}
         conduite_pricing={frontmatter.conduite_pricing}
         testimonials={frontmatter.testimonials}
-        fullImage={frontmatter.full_image}
         pricing={frontmatter.pricing}
       />
     </Layout>
@@ -281,17 +254,6 @@ export const productPageQuery = graphql`
             items
             plan
             price
-          }
-        }
-        testimonials {
-          author
-          quote
-        }
-        full_image {
-          childImageSharp {
-            fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
-            }
           }
         }
         pricing {
