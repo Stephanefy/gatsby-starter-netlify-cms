@@ -86,7 +86,7 @@ export const IndexPageTemplate = ({
                           <p className="has-text-centered is-size-5">{description}</p>
                       </div>
                     </div>  
-                    <hr style={{ width: "30%", margin: '5em auto', border: '2px solid #BD1A1A'}}/>
+                    <hr style={{ width: "30%", margin: '5em auto', height: '5px', backgroundColor:'#BD1A1A'}}/>
                 <div className="columns block" data-sal='slide-right' data-sal-easing="ease-out-back">
                   <div className="column" className='is-size-6'>
                           <h3>Formules adaptées</h3>
@@ -105,7 +105,7 @@ export const IndexPageTemplate = ({
                       <img src={illuChoice} alt="divers formules" width="400"/>
                   </div>
                 </div>
-                <hr style={{ width: "30%", margin: '5em auto', border: '2px solid #BD1A1A'}}/>
+                <hr style={{ width: "30%", margin: '5em auto', height: '5px', backgroundColor:'#BD1A1A'}}/>
 
                 <div className="columns" data-sal='slide-left'  data-sal-easing="ease-out-back" data-sal-duration="500ms">
                   <div className="column">

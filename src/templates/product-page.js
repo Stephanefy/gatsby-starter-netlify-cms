@@ -63,7 +63,7 @@ export const ProductPageTemplate = ({
                 <div className="column is-12">
               <Pricing data={conduite_pricing.plans} />
             </div>
-                <hr style={{ width: "30%", margin: '5em auto', border: '2px solid #BD1A1A'}}/>
+            <hr style={{ width: "30%", margin: '5em auto', height: '5px', backgroundColor:'#BD1A1A'}}/>
 
                 <h2 className="has-text-weight-semibold is-size-2 has-text-centered">
                     {pricing.heading}
@@ -81,7 +81,7 @@ export const ProductPageTemplate = ({
                     </div>
                   </div>
               </div>
-              <hr style={{ width: "30%", margin: '5em auto', border: '2px solid #BD1A1A'}}/>
+              <hr style={{ width: "30%", margin: '5em auto', height: '5px', backgroundColor:'#BD1A1A'}}/>
 
               <h2 className="has-text-centered is-size-2 has-text-weight-semibold">
                   Les modalités de paiement

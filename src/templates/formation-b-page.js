@@ -29,7 +29,7 @@ Nous proposons systématiquement à nos élèves toutes les filières de formati
 A la suite de cette évaluation, une pochette pédagogique contenant les différents documents administratifs, contractuels et informatifs sera remise à la signature du contrat, sans oublier, le cas échéant, les différents supports pédagogiques (livre de code, fiche des vérifications, livret d’apprentissage etc.).
         </p>
     </div>
-    <hr style={{ width: "30%", margin: '5em auto', border: '2px solid #BD1A1A'}}/>
+    <hr style={{ width: "30%", margin: '5em auto', height: '5px', backgroundColor:'#BD1A1A'}}/>
     
         <div className="column is-10 is-offset-1 is-size-1">
             <Steps direction="vertical" size="large" current={current} onChange={onChange}>

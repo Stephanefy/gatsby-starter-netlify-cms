@@ -28,7 +28,7 @@ export const FormationB78PageTemplate = () => {
         Le déroulement des séances se fait sur une durée de 7 heures et se décompose de plusieurs exercices.
         Cette formation est est possible trois mois après l'obtention préalable du permis boîte automatique.
         </p>
-        <hr style={{ width: "30%", margin: '5em auto', border: '2px solid #BD1A1A'}}/>
+        <hr style={{ width: "30%", margin: '5em auto', height: '5px', backgroundColor:'#BD1A1A'}}/>
     </div>
     <div className="column is-10 is-offset-1 is-size-1">
             <Steps direction="vertical" size="large" current={current} onChange={onChange}>

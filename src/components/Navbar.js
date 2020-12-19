@@ -66,7 +66,7 @@ const Navbar = class extends React.Component {
                 Formules
               </Link>
               <div className="navbar-item has-dropdown is-hoverable">
-                <Link className="navbar-link" to="/blog">
+                <Link className="navbar-link" to="/formations">
                   Formations
                 </Link>         
                 <div className="navbar-dropdown">

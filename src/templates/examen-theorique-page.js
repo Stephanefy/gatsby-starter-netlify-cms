@@ -60,7 +60,7 @@ C’est pourquoi l’examen du code de la route comporte dix thématiques, et ch
             <div className='column'></div>
         </div>
         <div className='columns'>
-        <hr style={{ width: "30%", margin: '5em auto', border: '2px solid #BD1A1A'}}/>
+        <hr style={{ width: "30%", margin: '5em auto', height: '5px', backgroundColor:'#BD1A1A'}}/>
       
         </div>
         <h2 className='is-size-2 has-text-centered'>Déroulement de l'éxamen théorique général</h2>
@@ -120,7 +120,7 @@ Si, par hasard, vous n’avez pas obtenu le résultat souhaité, surtout : pas d
         <Page pageNumber={pageNumber} />
        <div className="columns is-centered my-4">
        {pageNumber > 1 &&
-        <button onClick={goPreviousPage} className="button is-info">
+        <button onClick={goPreviousPage} className="button is-info mx-2">
          page précédente
       </button>
        }
@@ -133,7 +133,7 @@ Si, par hasard, vous n’avez pas obtenu le résultat souhaité, surtout : pas d
     
       
        </div> 
-       <div className="columns is-centered">
+       <div className="columns is-centered my-2">
        <p>Page {pageNumber} / {numPages}</p>
        </div>
        

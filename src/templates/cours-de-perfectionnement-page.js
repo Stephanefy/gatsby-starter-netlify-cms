@@ -46,7 +46,7 @@ export const CoursDePerfectionnementTemplate = () => {
             <div className='column is-one-quarter'></div>
         </div>
         <div className='columns'>
-        <hr style={{ width: "30%", margin: '5em auto', border: '2px solid #BD1A1A'}}/>
+        <hr style={{ width: "30%", margin: '5em auto', height: '5px', backgroundColor:'#BD1A1A'}}/>
       
         </div>
         <h2 className='is-size-2 has-text-centered'>Quelques raisons de s'inscrire à des cours de perfectionnement</h2>

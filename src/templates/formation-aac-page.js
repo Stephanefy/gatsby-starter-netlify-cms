@@ -97,13 +97,7 @@ Une fois cette procédure accomplie et lorsque l’élève a atteint l’âge mi
       Un candidat souhaitant conduire avec un proche sans suivre un apprentissage anticipé de la conduite peut solliciter une inscription en conduite supervisée. Dans ce cas, l’âge minimum pour passer le code de la route est de 17 ans, comme pour tout candidat classique. Le candidat doit également suivre une formation en conduite avec un enseignant avant d’obtenir l’autorisation de conduire avec son accompagnateur.
           </p>
         </div>
-        <hr
-          style={{
-            width: "30%",
-            margin: "5em auto",
-            border: "2px solid #BD1A1A",
-          }}
-        />
+        <hr style={{ width: "30%", margin: '5em auto', height: '5px', backgroundColor:'#BD1A1A'}}/>
         <div className="column is-10 is-offset-1 is-size-1">
           <Steps
             direction="vertical"
