@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {Link, graphql} from "gatsby";
 import {Steps} from "antd";
 
-import Layout from "../components/Layout";
+import Layout from '../components/Layout'
 
 const {Step} = Steps;
 export const FormationB78PageTemplate = () => {
@@ -23,12 +23,7 @@ export const FormationB78PageTemplate = () => {
             className="column is-10 is-size-6 has-text-centered"
             style={{margin: "auto"}}
           >
-            Cette formation à pour but de mettre en confiance l'élève venant de
-            voiture embrayage automatique su une voiture avec embrayage manuel.
-            Cette formation doit se faire sur une voiture manuelle avec un
-            moniteur diplômé de l'autorisation d'enseigner. Le déroulement des
-            séances se fait sur une durée de 7 heures et se décompose de
-            plusieurs exercices.
+          La conduite accompagnée permet aux jeunes d’acquérir davantage d’expérience avant l’examen du permis de conduire ou entre deux présentations à l’examen. C'est son principal avantage, mais pas le seul.
           </p>
         </div>
         <hr
@@ -99,12 +94,7 @@ Une fois cette procédure accomplie et lorsque l’élève a atteint l’âge mi
             className="column is-10 is-size-6 has-text-centered"
             style={{margin: "auto"}}
           >
-            Cette formation à pour but de mettre en confiance l'élève venant de
-            voiture embrayage automatique su une voiture avec embrayage manuel.
-            Cette formation doit se faire sur une voiture manuelle avec un
-            moniteur diplômé de l'autorisation d'enseigner. Le déroulement des
-            séances se fait sur une durée de 7 heures et se décompose de
-            plusieurs exercices.
+      Un candidat souhaitant conduire avec un proche sans suivre un apprentissage anticipé de la conduite peut solliciter une inscription en conduite supervisée. Dans ce cas, l’âge minimum pour passer le code de la route est de 17 ans, comme pour tout candidat classique. Le candidat doit également suivre une formation en conduite avec un enseignant avant d’obtenir l’autorisation de conduire avec son accompagnateur.
           </p>
         </div>
         <hr

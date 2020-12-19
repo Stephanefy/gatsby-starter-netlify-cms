@@ -62,11 +62,11 @@ export const IndexPageTemplate = ({
             <div className="column is-10 is-offset-1">
               <div className="content">
                 <div className="content">
-                  <div className="tile">
+                  <div className="tile" data-sal="fade">
                     <h1 className="title">{mainpitch.title}</h1>
                   </div>
                   <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
+                    <p className="is-size-5">{mainpitch.description}</p>
                   </div>
                 </div>
                 <div className="columns">
@@ -77,7 +77,7 @@ export const IndexPageTemplate = ({
                 </div>   
                 </div> 
                     <div className="columns block">
-                      <div className="column is-12" style={{ display: "flex", justifyContent:"center"}}>
+                      <div className="column is-12" style={{ display: "flex", justifyContent:"center"}} data-sal="slide-left"  data-sal-easing="ease-out-back">
                               <img src={!!logocpf.childImageSharp ? logocpf.childImageSharp.fluid.src : logocpf} />
                       </div>
                       </div>
@@ -87,7 +87,7 @@ export const IndexPageTemplate = ({
                       </div>
                     </div>  
                     <hr style={{ width: "30%", margin: '5em auto', border: '2px solid #BD1A1A'}}/>
-                <div className="columns block">
+                <div className="columns block" data-sal='slide-right' data-sal-easing="ease-out-back">
                   <div className="column" className='is-size-6'>
                           <h3>Formules adaptées</h3>
                           <p>
@@ -107,11 +107,11 @@ export const IndexPageTemplate = ({
                 </div>
                 <hr style={{ width: "30%", margin: '5em auto', border: '2px solid #BD1A1A'}}/>
 
-                <div className="columns">
+                <div className="columns" data-sal='slide-left'  data-sal-easing="ease-out-back" data-sal-duration="500ms">
                   <div className="column">
                   <img src={illuCar} alt="divers formules" width="400"/>
                   </div>
-                  <div className="column is-half is-size-6">
+                  <div className="column is-half is-size-6" >
                   <h3>Apprendre à conduire au meilleur prix près de Saint-Denis</h3>
                           <p>
                           Code de la route, permis B ou encore conduite accompagnée... Passez votre permis de conduire dans des conditions optimales près de votre domicile à Sainte-Clotilde et dans ses environs. Faites confiance à nos moniteurs sérieux, diplômés, disponibles et à l'écoute. Pour connaître toutes les modalités d'inscription, n'hésitez pas à venir nous rencontrer à l'auto-école ou à nous contacter par e-mail ou par téléphone.

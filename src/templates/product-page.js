@@ -39,8 +39,8 @@ export const ProductPageTemplate = ({
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
+          <div className="columns is-centered my-4">
+            <div className="column is-10">
               <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
               <p className="is-size-4">{description}</p>
               <div className="column is-12">
@@ -52,15 +52,13 @@ export const ProductPageTemplate = ({
             </div>
             </div>
           </div>
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="columns mb-3">
+          <div className="columns is-centered my-4">
+            <div className="column is-10">
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-3">
                     {main.heading}
                   </h3>
-                  <p>{main.description}</p>
-                </div>
+                  <p className='is-size-5'>{main.description}</p>
                 </div>
                 <div className="column is-12">
               <Pricing data={conduite_pricing.plans} />
@@ -71,18 +69,17 @@ export const ProductPageTemplate = ({
                     {pricing.heading}
                   </h2>
               
-              
-                <div className="columns">
-                <div className="column is-half">
-                <p className="is-size-5">{pricing.description}</p>
-                <p className="is-size-6">Le parcours de formation proposé permettra de faire progresser l’élève dans sa formation pour l’amener en situation de réussite aux examens du permis de conduire.
-Au travers de la signature du contrat, le candidat s’engage à suivre ce parcours de formation :</p>
-                </div>
-                <div className="column is-7">
-                  <div>
-                      <Pricing data={pricing.plans} />
+                <div className="columns is-centered my-4">
+                  <div className="column is-half">
+                  <p className="is-size-4">{pricing.description}</p>
+                  <p className="is-size-5">Le parcours de formation proposé permettra de faire progresser l’élève dans sa formation pour l’amener en situation de réussite aux examens du permis de conduire.
+  Au travers de la signature du contrat, le candidat s’engage à suivre ce parcours de formation :</p>
                   </div>
-                </div>
+                  <div className="column is-narrow">
+                    <div>
+                        <Pricing data={pricing.plans} />
+                    </div>
+                  </div>
               </div>
               <hr style={{ width: "30%", margin: '5em auto', border: '2px solid #BD1A1A'}}/>
 

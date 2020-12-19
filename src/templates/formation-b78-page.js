@@ -26,6 +26,7 @@ export const FormationB78PageTemplate = () => {
         Cette formation à pour but de mettre en confiance l'élève venant de voiture embrayage automatique su une voiture avec embrayage manuel.
         Cette formation doit se faire sur une voiture manuelle avec un moniteur diplômé de l'autorisation d'enseigner.
         Le déroulement des séances se fait sur une durée de 7 heures et se décompose de plusieurs exercices.
+        Cette formation est est possible trois mois après l'obtention préalable du permis boîte automatique.
         </p>
         <hr style={{ width: "30%", margin: '5em auto', border: '2px solid #BD1A1A'}}/>
     </div>

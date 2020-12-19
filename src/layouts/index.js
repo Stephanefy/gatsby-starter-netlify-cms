@@ -2,20 +2,23 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import './all.sass'
-import useSiteMetadata from './SiteMetadata'
+import '../components/all.sass'
+import useSiteMetadata from '../components/SiteMetadata'
 import { withPrefix } from 'gatsby'
 import {css} from '@emotion/core';
+import { TransitionProvider, TransitionViews } from "gatsby-plugin-transitions";
 
 
 import "fontsource-nunito";
 
-const Layout = ({children }) => {
+const Layout = ({ location, children }) => {
   const { title, description } = useSiteMetadata()
   return (
-
+    <TransitionProvider location={location}>
+      <TransitionViews>
     <div css={css`
       font-family: 'Nunito';
+    
     `}>
       <Helmet>
         <html lang="en" />
@@ -67,7 +70,8 @@ const Layout = ({children }) => {
       <div>{children}</div>
       <Footer />
     </div>
-
+      </TransitionViews>
+    </TransitionProvider>
   )
 }
 

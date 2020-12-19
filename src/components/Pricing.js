@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 
 const Pricing = ({ data }) => (
  
-  <div className="columns">
+  <div className="columns" >
   {data.map((price) => (
-      <div className="card" style={{margin: '0 0.5rem'}}>
+      <div className="card" style={{margin: '0 0.5rem'}} data-sal="fade" data-sal-duration="1500ms">
       <div className="card-content" style={{padding: '0 0rem'}}>
       <div key={price.plan} className="column">
         <section className="section">
