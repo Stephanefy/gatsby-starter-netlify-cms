@@ -149,7 +149,7 @@ Ce livret guide l’apprenti et lui permet de savoir « où il en est » mais au
               </div>
               <div className="column is-7">
                 <h3 className="is-size-3">L'examen du permis de conduire</h3>
-                <p className="is-size-6" data-sal='slide-up' data-sal-relay='500'>
+                <p className="is-size-6" data-sal='slide-up' data-sal-relay='300'>
  
 Une fois les compétences validées, l’apprenti est présenté à l’examen du permis de conduire.
 Il sera pris en charge par un formateur qui l’accompagnera au centre d’examen 15 minutes avant le début de l’épreuve.
@@ -157,7 +157,7 @@ Les candidats sont évalués par un expert l’IPCSR : l’inspecteur du permis 
 
 L’épreuve étant individuelle, chaque candidat se présentera, dans l’ordre prédéfini, à l’expert : l’inspecteur du permis de conduire et la sécurité routière, qui lui précisera ce qu’il aura à faire :</p>
 
-<ul style={{marginTop:'1rem'}} className="is-size-6" data-sal='slide-up' data-sal-relay='500'>
+<ul style={{marginTop:'1rem'}} className="is-size-6" data-sal='slide-up' data-sal-relay='300'>
     <li>- Réaliser un parcours empruntant des voies à caractère urbain, routier et / ou autoroutier
 </li>
     <li>- Suivre un itinéraire ou se rendre vers une destination préalablement établie, en se guidant de manière autonome, pendant une durée globale d’environ cinq minutes
@@ -174,7 +174,7 @@ L’épreuve étant individuelle, chaque candidat se présentera, dans l’ordre
     <li>- Faire preuve de courtoisie envers les autres usagers, et notamment les plus vulnérables
 </li>
 </ul>
-<p className="is-size-6" data-sal='slide-up' data-sal-relay='500'>
+<p className="is-size-6" data-sal='slide-up' data-sal-relay='300'>
 Après vérification de son identité, l’épreuve débutera par l’installation au poste de conduite et se poursuivra durant près de 25 minutes, jusqu’au retour au point de départ initiale.
 L’élève devra être poli, respectueux et courtois envers l’expert, ce quel que soit le déroulement de l’épreuve. Il devra également adopter un comportement et un langage appropriés.
 L’évaluation réalisée par l’expert est basée sur des textes réglementaires et instructions précises qui en fixent les modalités.
@@ -185,7 +185,7 @@ Un échange entre l’expert retranscrit de façon formelle ce bilan de compéte
 L’évaluation sera positive si la note obtenu lors de ce bilan est supérieure ou égale à 20 points sans avoir commis d’erreur éliminatoire. Il sera donc négatif si la note obtenue est inférieure à 20 points ou si l’élève a commis une ou plusieurs fautes éliminatoires.
 Le formateur, présent le jour de l’évaluation, pourra expliquer à l’élève les différentes notes obtenues et les commentaires de l’expert, ce qui permet en cas d’échec de savoir quels sont les points à travailler et à améliorer.
 </p>
-       <Steps direction="vertical" size="large" current={this.state.current} onChange={this.onChange} data-sal='slide-up' data-sal-relay='500'>
+       <Steps direction="vertical" size="large" current={this.state.current} onChange={this.onChange} data-sal='slide-up' data-sal-relay='300'>
                 <Step title="La vérification de la recevabilité des documents d’examen" description="" />
                 <Step title="L’accueil du candidat, la vérification de son identité et s’il a suivi une formation selon la formule de l’apprentissage anticipé de la conduite, de son attestation de fin de formation initiale ;
 " description="" />

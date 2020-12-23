@@ -77,7 +77,10 @@ const Navbar = class extends React.Component {
                       Formation Boite auto
                     </Link>
                     <Link className="navbar-item" to="/formation-aac">
-                      Conduite accompagnée et supervisée
+                      Conduite accompagnée
+                    </Link>
+                    <Link className="navbar-item" to="/formation-supervisee">
+                      Conduite supervisée
                     </Link>
                     <Link className="navbar-item" to="/cours-de-perfectionnement">
                       Cours de perfectionnement
