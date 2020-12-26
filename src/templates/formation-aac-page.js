@@ -63,7 +63,8 @@ export const FormationB78PageTemplate = () => {
           style={{
             width: "30%",
             margin: "5em auto",
-            border: "2px solid #BD1A1A",
+            height: "5px",
+            backgroundColor: "#BD1A1A",
           }}
         />
         <div className="column is-10 is-offset-1 is-size-1">

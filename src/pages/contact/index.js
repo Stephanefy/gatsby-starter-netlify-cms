@@ -135,16 +135,16 @@ export default class Index extends React.Component {
                     <li style={{listStyleType:'none'}}>** Les données personnelles communiquées sont nécessaires aux fins de vous contacter. Elles sont destinées à Mme Marie Mounichetty et ses sous-traitants. Vous disposez de droits d’accès, de rectification, d’effacement, de portabilité, de limitation, d’opposition, de retrait de votre consentement à tout moment et du droit d’introduire une réclamation auprès d’une autorité de contrôle, ainsi que d’organiser le sort de vos données post-mortem. Vous pouvez exercer ces droits par voie postale à l'adresse18 rue Lory-les-Hauts, 97490 Sainte-Clotilde, La Reunion, ou par courrier électronique à l'adresse mounichettymareannick.autoecoles@sfr.fr. Un justificatif d'identité pourra vous être demandé. Nous conservons vos données pendant la période de prise de contact puis pendant la durée de prescription légale aux fins probatoire et de gestion des contentieux.</li>
                   </ul>
               </div>
-              <div className="columns is-centered">
+              <div className="columns is-centered my-2 ">
                   <h3>Horaires d'ouverture</h3>
               </div>
-              <div className="columns is-centered" style={{margin:"80px 0"}}>
+              <div className="columns is-centered" style={{margin:"20px 0"}}>
                   <BusinessHours/>
               </div>
             </div>
           </div>
           <div className="columns is-centered">
-            <div className="column is-4 has-text-centered is-size-6">
+            <div className="column is-4 has-text-centered is-size-6 has-text-weight-semibold	">
                 <p>
                 L'auto-école Sainte-Clotilde est située entre la rue de l'Ancienne Poste et la rue Lacroix, à seulement quelques minutes à pied de la Mairie de Sainte-Clotilde et du Collège Les Deux Canons. Inscrivez-vous sans plus attendre pour vous préparer à l'examen du code de la route et du permis de conduire automobile.
                 </p>
