@@ -53,7 +53,7 @@ export default class Index extends React.Component {
             </div>
 
         
-              <div className="columns is-centered my-2 is-flex is-flex-direction-column	">
+              <div className="columns is-centered my-2">
                   <h3>Horaires d'ouverture de notre Bureau</h3>
               </div>
               <div className="columns is-centered">
@@ -62,7 +62,7 @@ export default class Index extends React.Component {
               <div className="columns is-centered" style={{margin:"20px 0"}}>
                   <BusinessHours/>
               </div>
-              <div className="columns is-centered my-2 is-flex is-flex-direction-column	">
+              <div className="columns is-centered my-2">
                   <h3>Horaires de code avec enseignant</h3>
               </div>
               <div className="columns is-centered" style={{margin:"20px 0"}}>
