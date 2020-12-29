@@ -1,6 +1,6 @@
 ---
 heading: Nos différentes formules code et conduite
-path: /products
+path: /formules
 templateKey: product-page
 title: Formules
 image: /img/karsten-wurth-rafblrbne3o-unsplash.jpg

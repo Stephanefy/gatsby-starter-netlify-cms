@@ -2,7 +2,7 @@
 templateKey: index-page
 title: Auto-école Sainte-Clotilde
 heading: L'auto-école possède également un label qualité.
-subheading: L'apprentissage de la sécurité routière et de la conduite sur l'île
+subheading: L'apprentissage de la conduite sur l'île
   de La Réunion
 mainpitch:
   title: Passer son permis de voiture à Sainte-Clotilde

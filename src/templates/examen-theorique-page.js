@@ -110,7 +110,7 @@ Si, par hasard, vous n’avez pas obtenu le résultat souhaité, surtout : pas d
                     
 
     </section>
-    <div className="columns is-centered my-6">
+    <div className="columns is-mobile is-centered my-6">
   
       <Document
         file={examenTheoPdf}
@@ -118,7 +118,7 @@ Si, par hasard, vous n’avez pas obtenu le résultat souhaité, surtout : pas d
       >
   
         <Page pageNumber={pageNumber} />
-       <div className="columns is-centered my-4">
+       <div className="columns is-mobile is-centered my-4">
        {pageNumber > 1 &&
         <button onClick={goPreviousPage} className="button is-info mx-2">
          page précédente
@@ -133,7 +133,7 @@ Si, par hasard, vous n’avez pas obtenu le résultat souhaité, surtout : pas d
     
       
        </div> 
-       <div className="columns is-centered my-2">
+       <div className="columns is-mobile is-centered my-2">
        <p>Page {pageNumber} / {numPages}</p>
        </div>
        

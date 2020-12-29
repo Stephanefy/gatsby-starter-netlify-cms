@@ -8,6 +8,7 @@ import illuChoice from "../../static/img/undraw_select_option_y75i.svg";
 import illuCar from "../../static/img/car-illustration.svg";
 import illuHero from "../../static/img/filtered-road-illustration.png";
 import RoadTripIllu from "../../static/img/Road Trip.svg";
+import Separator from '../components/Separator';
 
 export const IndexPageTemplate = ({
   image,
@@ -92,14 +93,7 @@ export const IndexPageTemplate = ({
                     <p className="has-text-centered is-size-5">{description}</p>
                   </div>
                 </div>
-                <hr
-                  style={{
-                    width: "30%",
-                    margin: "5em auto",
-                    height: "5px",
-                    backgroundColor: "#BD1A1A",
-                  }}
-                />
+                <Separator/>
                 <div
                   className="columns block"
                   data-sal="slide-right"
@@ -124,15 +118,11 @@ export const IndexPageTemplate = ({
                     <img src={illuChoice} alt="divers formules" width="400" />
                   </div>
                 </div>
-                <hr
-                  style={{
-                    width: "30%",
-                    margin: "5em auto",
-                    height: "5px",
-                    backgroundColor: "#BD1A1A",
-                  }}
-                />
-
+                <div className="is-flex is-justify-content-flex-end	">
+                  <div>
+                  <Separator/>
+                  </div>
+                </div>
                 <div
                   className="columns"
                   data-sal="slide-left"

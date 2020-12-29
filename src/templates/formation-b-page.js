@@ -123,12 +123,13 @@ Votre résultat ne sera disponible que 48 heures après le passage de l'examen (
           </div>
         </section>
       </div>
-      <div className="columns is-centered my-6">
+      <div className="columns is-mobile is-centered my-6">
         <Document file={examenPermisConduirePdf} className="card">
           <Page pageNumber={pageNumber} />
-          <div className="columns is-centered my-4">
+          <div className="columns is-mobile is-centered my-4">
+            
             {pageNumber > 1 && (
-              <button onClick={goPreviousPage} className="button is-info mx-2">
+              <button onClick={goPreviousPage} className="button is-info" >
                 page précédente
               </button>
             )}
@@ -138,7 +139,7 @@ Votre résultat ne sera disponible que 48 heures après le passage de l'examen (
               </button>
             )}
           </div>
-          <div className="columns is-centered my-2">
+          <div className="columns is-mobile is-centered my-2">
             <p>
               Page {pageNumber} / {numPages}
             </p>
