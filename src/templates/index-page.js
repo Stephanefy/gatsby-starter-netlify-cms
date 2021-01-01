@@ -6,7 +6,6 @@ import Layout from "../components/Layout";
 import LeafletMap from "../components/Map";
 import illuChoice from "../../static/img/undraw_select_option_y75i.svg";
 import illuCar from "../../static/img/car-illustration.svg";
-import illuHero from "../../static/img/filtered-road-illustration.png";
 import RoadTripIllu from "../../static/img/Road Trip.svg";
 import Separator from '../components/Separator';
 
@@ -85,6 +84,7 @@ export const IndexPageTemplate = ({
                           ? logocpf.childImageSharp.fluid.src
                           : logocpf
                       }
+                      alt="logo école conduite qualité"
                     />
                   </div>
                 </div>
@@ -99,7 +99,7 @@ export const IndexPageTemplate = ({
                   data-sal="slide-right"
                   data-sal-easing="ease-out-back"
                 >
-                  <div className="column" className="is-size-6">
+                  <div className="column is-size-6">
                     <h3>Formules adaptées</h3>
                     <p>
                       Chaque formule que nous proposons a été pensée pour que

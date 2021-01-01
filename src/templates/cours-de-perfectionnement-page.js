@@ -1,5 +1,4 @@
-import React, {useState} from 'react'
-import { Link, graphql } from 'gatsby'
+import React from 'react'
 import { Collapse } from 'antd';
 import Layout from '../components/Layout'
 
@@ -23,14 +22,6 @@ export const CoursDePerfectionnementTemplate = () => {
     `
 
 
-
-    const [current, setCurrent] = useState(0);
-
-
-    const onChange = (current) => {
-        setCurrent(current)
-    }
-    
     return (
     <div style={{ marginTop: '6rem'}}>
     <section className="section">

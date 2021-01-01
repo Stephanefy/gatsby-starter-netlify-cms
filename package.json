@@ -42,6 +42,7 @@
     "react-helmet": "^6.0.0",
     "react-leaflet": "^2.7.0",
     "react-pdf": "^5.1.0",
+    "react-sizeme": "^2.6.12",
     "react-spring": "^8.0.27",
     "uuid": "^7.0.0"
   },

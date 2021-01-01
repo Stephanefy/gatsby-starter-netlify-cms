@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
-import { Link, graphql } from 'gatsby'
 import { Steps } from 'antd';
 
 
+
 import Layout from '../components/Layout'
+import Separator from '../components/Separator';
 
 const { Step } = Steps;
 export const FormationB78PageTemplate = () => {
@@ -28,8 +29,10 @@ export const FormationB78PageTemplate = () => {
         Le déroulement des séances se fait sur une durée de 7 heures et se décompose de plusieurs exercices.
         Cette formation est est possible trois mois après l'obtention préalable du permis boîte automatique.
         </p>
-        <hr style={{ width: "30%", margin: '5em auto', height: '5px', backgroundColor:'#BD1A1A'}}/>
-    </div>
+        <div className="has-text-centered">
+            <Separator />
+          </div>    
+          </div>
     <div className="column is-10 is-offset-1 is-size-1">
             <Steps direction="vertical" size="large" current={current} onChange={onChange}>
                 <Step title="Comprendre et savoir utiliser le point de patinage de l'embrayage;" description="" />

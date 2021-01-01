@@ -1,8 +1,8 @@
 import React, {useState} from "react";
-import {Link, graphql} from "gatsby";
 import {Steps} from "antd";
 
-import Layout from '../components/Layout'
+import Layout from '../components/Layout';
+import Separator from '../components/Separator';
 
 const {Step} = Steps;
 export const FormationCourSuperviseTemplate = () => {
@@ -26,7 +26,9 @@ export const FormationCourSuperviseTemplate = () => {
       Un candidat souhaitant conduire avec un proche sans suivre un apprentissage anticipé de la conduite peut solliciter une inscription en conduite supervisée. Dans ce cas, l’âge minimum pour passer le code de la route est de 17 ans, comme pour tout candidat classique. Le candidat doit également suivre une formation en conduite avec un enseignant avant d’obtenir l’autorisation de conduire avec son accompagnateur.
           </p>
         </div>
-        <hr style={{ width: "30%", margin: '5em auto', height: '5px', backgroundColor:'#BD1A1A'}}/>
+        <div className="has-text-centered">
+          <Separator/>
+        </div>
         <div className="column is-10 is-offset-1 is-size-1">
           <Steps
             direction="vertical"
@@ -49,12 +51,12 @@ export const FormationCourSuperviseTemplate = () => {
                     </ul>
                     <p>
                     Pour y accéder, il faut :
+                    </p>
                         <ul>
                             <li>• avoir réussi le code de la route</li>
                             <li>• avoir suivi une formation pratique avec un enseignant de l’école de conduite (20 heures minimum)</li>
                             <li>• avoir bénéficié d’une évaluation favorable de la part de son enseignant de la conduite et de la sécurité routière.</li>
                         </ul>
-                    </p>
               </div>}                     
             />
             <Step
@@ -76,12 +78,12 @@ export const FormationCourSuperviseTemplate = () => {
             <Step
               title="D/ Quels sont les avantages de la conduite supervisée ?"
               description={<div>
-                    <p>"La conduite supervisée permet :
+                    <p>"La conduite supervisée permet :</p>
                     <ul>
                         <li>*D’acquérir de l’expérience de conduite à moindre coût pour compléter sa formation initiale et, en cas d’échec à l’examen pratique, d’améliorer ses acquis en attendant de le repasser</li>
                         <li>*D’augmenter sensiblement ses chances de réussite à l’examen du permis de conduire : 74% de chances de l’obtenir dès la première fois contre 55% par la voie de l’apprentissage traditionnel</li>
                     </ul>
-                    </p>
+
               </div>}
             />
             <Step

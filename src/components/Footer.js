@@ -3,10 +3,7 @@ import { Link } from 'gatsby'
 
 import logo from '../img/logo-ae-sainte-clotilde.svg'
 import facebook from '../img/social/facebook.svg'
-import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
-import vimeo from '../img/social/vimeo.svg'
-import Download from './Download';
+
 
 const Footer = class extends React.Component {
   render() {
@@ -38,18 +35,18 @@ const Footer = class extends React.Component {
                         Accueil
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <Link className="navbar-item" to="/about">
                         l'Auto-école
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link className="navbar-item" to="/products">
                         Formules
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/contact/examples">
+                      <Link className="navbar-item" to="/contact">
                         Contact
                       </Link>
                     </li>

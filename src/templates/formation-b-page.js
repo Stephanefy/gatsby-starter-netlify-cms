@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 import Layout from "../components/Layout";
+import Separator from "../components/Separator";
+import {SizeMe} from "react-sizeme";
 
-import {Link, graphql} from "gatsby";
 import {Steps, Result} from "antd";
 
 import examenPermisConduirePdf from "../../static/pdf/examen-permis-de-conduire.pdf";
@@ -20,10 +21,6 @@ export const FormationBPageTemplate = () => {
     setPageNumber(prevPageNumber => prevPageNumber - 1);
   };
 
-  function onDocumentLoadSuccess({numPages}) {
-    setNumPages(numPages);
-  }
-
   const [current, setCurrent] = useState(0);
 
   const onChange = current => {
@@ -38,42 +35,41 @@ export const FormationBPageTemplate = () => {
             <h1 className="is-size-1 has-text-weight-semibold has-text-centered">
               Formations B
             </h1>
-            <p
+            <div
               className="column is-10 is-size-6 has-text-left"
               style={{margin: "auto"}}
             >
-              Le résultat de l’évaluation sera une note ou une lettre, qui nous
-              permettra de déterminer, selon une grille pré-établi, un volume de
-              formation prévisionnel : 
-              <p>Nous pourrons alors vous proposer un
-              parcours de formation adapté, personnalisé et accompagné d’une
-              proposition détaillée et chiffrée.
+              <p>
+                Le résultat de l’évaluation sera une note ou une lettre, qui
+                nous permettra de déterminer, selon une grille pré-établi, un
+                volume de formation prévisionnel :
               </p>
               <p>
-              Nous proposons systématiquement
-              à nos élèves toutes les filières de formation possibles
-              (Apprentissage Anticipé de la Conduite, Conduite Supervisée, B
-              traditionnel, Boite Automatique) et procédons à un conseil
-              personnalisé en tenant compte des capacités et motivations de
-              chacun dans le choix de leur mode d’apprentissage.
+                Nous pourrons alors vous proposer un parcours de formation
+                adapté, personnalisé et accompagné d’une proposition détaillée
+                et chiffrée.
               </p>
-              A la suite de
-              cette évaluation, une pochette pédagogique contenant les
-              différents documents administratifs, contractuels et informatifs
-              sera remise à la signature du contrat, sans oublier, le cas
-              échéant, les différents supports pédagogiques (livre de code,
-              fiche des vérifications, livret d’apprentissage etc.).
-            </p>
+              <p>
+                Nous proposons systématiquement à nos élèves toutes les filières
+                de formation possibles (Apprentissage Anticipé de la Conduite,
+                Conduite Supervisée, B traditionnel, Boite Automatique) et
+                procédons à un conseil personnalisé en tenant compte des
+                capacités et motivations de chacun dans le choix de leur mode
+                d’apprentissage.
+              </p>
+              <p>
+                A la suite de cette évaluation, une pochette pédagogique
+                contenant les différents documents administratifs, contractuels
+                et informatifs sera remise à la signature du contrat, sans
+                oublier, le cas échéant, les différents supports pédagogiques
+                (livre de code, fiche des vérifications, livret d’apprentissage
+                etc.).
+              </p>
+            </div>
           </div>
-          <hr
-            style={{
-              width: "30%",
-              margin: "5em auto",
-              height: "5px",
-              backgroundColor: "#BD1A1A",
-            }}
-          />
-
+          <div className="has-text-centered">
+            <Separator />
+          </div>
           <div className="column is-10 is-offset-1 is-size-1">
             <Steps
               direction="vertical"
@@ -124,27 +120,35 @@ Votre résultat ne sera disponible que 48 heures après le passage de l'examen (
         </section>
       </div>
       <div className="columns is-mobile is-centered my-6">
-        <Document file={examenPermisConduirePdf} className="card">
-          <Page pageNumber={pageNumber} />
-          <div className="columns is-mobile is-centered my-4">
-            
-            {pageNumber > 1 && (
-              <button onClick={goPreviousPage} className="button is-info" >
-                page précédente
-              </button>
+        <div className="column is-10">
+          <SizeMe
+            render={({size}) => (
+              <Document file={examenPermisConduirePdf} className="card">
+                <Page
+                  pageNumber={pageNumber}
+                  width={size.width ? size.width : 1}
+                />
+                <div className="columns is-mobile is-centered my-4">
+                  {pageNumber > 1 && (
+                    <button onClick={goPreviousPage} className="button is-info">
+                      page précédente
+                    </button>
+                  )}
+                  {pageNumber < numPages && (
+                    <button onClick={goNextPage} className="button is-info">
+                      page suivante
+                    </button>
+                  )}
+                </div>
+                <div className="columns is-mobile is-centered my-2">
+                  <p>
+                    Page {pageNumber} / {numPages}
+                  </p>
+                </div>
+              </Document>
             )}
-            {pageNumber < numPages && (
-              <button onClick={goNextPage} className="button is-info">
-                page suivante
-              </button>
-            )}
-          </div>
-          <div className="columns is-mobile is-centered my-2">
-            <p>
-              Page {pageNumber} / {numPages}
-            </p>
-          </div>
-        </Document>
+          />
+        </div>
       </div>
     </>
   );

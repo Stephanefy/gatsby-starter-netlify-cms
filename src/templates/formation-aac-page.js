@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import Layout from '../components/Layout'
+import Separator from '../components/Separator';
 import {Steps} from "antd";
 import { Carousel } from 'antd';
 import { LikeFilled } from '@ant-design/icons';
@@ -32,9 +33,7 @@ export const FormationB78PageTemplate = () => {
       setPageNumber(prevPageNumber => prevPageNumber - 1)
   }
 
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-  }
+
 
 
 
@@ -59,14 +58,9 @@ export const FormationB78PageTemplate = () => {
           La conduite accompagnée permet aux jeunes d’acquérir davantage d’expérience avant l’examen du permis de conduire ou entre deux présentations à l’examen. C'est son principal avantage, mais pas le seul.
           </p>
         </div>
-        <hr
-          style={{
-            width: "30%",
-            margin: "5em auto",
-            height: "5px",
-            backgroundColor: "#BD1A1A",
-          }}
-        />
+        <div className="has-text-centered">
+            <Separator />
+          </div> 
         <div className="column is-10 is-offset-1 is-size-1">
           <Steps
             direction="vertical"

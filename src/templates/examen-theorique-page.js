@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 
 import Layout from '../components/Layout';
+import Separator from '../components/Separator';
 import {Steps} from "antd";
-import PDFComponent from '../../src/components/PdfComponent';
 import examenTheoPdf from '../../static/pdf/thèmes-exam-théorique.pdf';
 import { Document, Page, pdfjs  } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
@@ -25,9 +25,7 @@ export const ExamenTheoriqueTemplate = () => {
         setPageNumber(prevPageNumber => prevPageNumber - 1)
     }
 
-    function onDocumentLoadSuccess({ numPages }) {
-      setNumPages(numPages);
-    }
+
 
     const [current, setCurrent] = useState(0);
 
@@ -59,10 +57,10 @@ C’est pourquoi l’examen du code de la route comporte dix thématiques, et ch
                 </p>             
             <div className='column'></div>
         </div>
-        <div className='columns'>
-        <hr style={{ width: "30%", margin: '5em auto', height: '5px', backgroundColor:'#BD1A1A'}}/>
-      
+        <div className="has-text-centered">
+          <Separator/>
         </div>
+      
         <h2 className='is-size-2 has-text-centered'>Déroulement de l'éxamen théorique général</h2>
         <div className='columns my-6'>
         

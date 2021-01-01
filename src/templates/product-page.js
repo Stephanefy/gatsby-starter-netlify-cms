@@ -127,7 +127,7 @@ export const ProductPageTemplate = ({
               </h2>
               <p className="has-text-centered" style={{marginTop: "5rem"}}>
                 <span className="icon has-text-info">
-                  <i class="fas fa-hand-holding-usd fa-6x"></i>
+                  <i className="fas fa-hand-holding-usd fa-6x"></i>
                 </span>
               </p>
               <p className="is-size-4 has-text-centered">
