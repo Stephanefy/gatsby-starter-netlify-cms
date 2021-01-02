@@ -130,12 +130,12 @@ Votre résultat ne sera disponible que 48 heures après le passage de l'examen (
                 />
                 <div className="columns is-mobile is-centered my-4">
                   {pageNumber > 1 && (
-                    <button onClick={goPreviousPage} className="button is-info">
+                    <button onClick={goPreviousPage} className="button is-primary">
                       page précédente
                     </button>
                   )}
                   {pageNumber < numPages && (
-                    <button onClick={goNextPage} className="button is-info">
+                    <button onClick={goNextPage} className="button is-primary">
                       page suivante
                     </button>
                   )}

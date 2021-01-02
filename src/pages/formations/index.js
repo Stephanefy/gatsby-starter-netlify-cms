@@ -78,7 +78,7 @@ export default class BlogIndexPage extends React.Component {
           <div className="container">
             <div className="columns">
               <div className="column is-10 is-offset-1">
-                <div className="columns" data-sal="slide-up">
+                <div className="columns" data-sal="slide-up" data-sal-duration="500">
                   <div className="column is-6 is-offset-1">
                     <h3 className="is-size-3">Le programme de formation</h3>
                     <p className="is-size-6">
@@ -110,6 +110,7 @@ export default class BlogIndexPage extends React.Component {
                   className="columns"
                   data-sal="slide-up"
                   data-sal-delay="300"
+                  data-sal-duration="500"
                 >
                   <div className="column is-4 is-hidden-mobile">
                     <img src={EvaIllu} alt="évaluations" width="500" />
@@ -139,6 +140,7 @@ export default class BlogIndexPage extends React.Component {
                   className="columns"
                   data-sal="slide-up"
                   data-sal-delay="300"
+                  data-sal-duration="500"
                 >
                   <div className="column is-6 is-offset-1">
                     <h3 className="is-size-3">Le livret d'apprentissage</h3>
@@ -183,6 +185,7 @@ export default class BlogIndexPage extends React.Component {
                       className="is-size-6"
                       data-sal="slide-up"
                       data-sal-relay="300"
+                      data-sal-duration="500"
                     >
                       Une fois les compétences validées, l’apprenti est présenté
                       à l’examen du permis de conduire. Il sera pris en charge
@@ -201,6 +204,7 @@ export default class BlogIndexPage extends React.Component {
                       className="is-size-6"
                       data-sal="slide-up"
                       data-sal-relay="300"
+                      data-sal-duration="500"
                     >
                       <li>
                         - Réaliser un parcours empruntant des voies à caractère
@@ -241,6 +245,7 @@ export default class BlogIndexPage extends React.Component {
                       className="is-size-6"
                       data-sal="slide-up"
                       data-sal-relay="300"
+                      data-sal-duration="500"
                     >
                       Après vérification de son identité, l’épreuve débutera par
                       l’installation au poste de conduite et se poursuivra
@@ -280,6 +285,7 @@ export default class BlogIndexPage extends React.Component {
                       onChange={this.onChange}
                       data-sal="slide-up"
                       data-sal-relay="300"
+                      data-sal-duration="500"
                     >
                       <Step
                         title="La vérification de la recevabilité des documents d’examen"

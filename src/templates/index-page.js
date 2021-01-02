@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import PropTypes from "prop-types";
 import {Link, graphql} from "gatsby";
 
@@ -18,7 +18,11 @@ export const IndexPageTemplate = ({
   description,
   logocpf,
   intro,
-}) => (
+}) => {
+
+  const [isShown, setIsShown] = useState(false)
+
+return(
   <div>
       <div
           className="full-width-image-container margin-top-0"
@@ -42,11 +46,27 @@ export const IndexPageTemplate = ({
               <h1
                 className="has-text-weight-bold is-size-1"
                 style={{
-                  color: "#333",
+                  color: "#bd1a1a",
+                  paddingTop:'4rem',
                 }}
               >
                 {subheading}
               </h1>
+              <button className="button is-primary" >
+                <Link to="/contact" style={{color:'#fff'}}>
+                  Nous contacter
+                </Link>
+              </button>
+              <button className="button is-primary mx-4"
+                onMouseEnter={() => setIsShown(true)}
+                onMouseLeave={() => setIsShown(false)}
+              >
+                <span style={{color:'#fff'}}>
+                  {
+                    isShown ? "0262 28 46 25" : "Appelez-nous"
+                  }
+                </span>
+              </button>
        
               </div>
               <div className="column is-6">
@@ -76,7 +96,7 @@ export const IndexPageTemplate = ({
                     className="column is-12"
                     style={{display: "flex", justifyContent: "center"}}
                     data-sal="slide-left"
-                    data-sal-easing="ease-out-back"
+                    data-sal-duration="500" 
                   >
                     <img
                       src={
@@ -97,7 +117,7 @@ export const IndexPageTemplate = ({
                 <div
                   className="columns block"
                   data-sal="slide-right"
-                  data-sal-easing="ease-out-back"
+                  data-sal-duration="500" 
                 >
                   <div className="column is-size-6">
                     <h3>Formules adaptées</h3>
@@ -126,8 +146,7 @@ export const IndexPageTemplate = ({
                 <div
                   className="columns"
                   data-sal="slide-left"
-                  data-sal-easing="ease-out-back"
-                  data-sal-duration="500ms"
+                  data-sal-duration="500" 
                 >
                   <div className="column">
                     <img src={illuCar} alt="nos atouts" width="400" />
@@ -151,9 +170,12 @@ export const IndexPageTemplate = ({
                 </div>
                 <div className="columns block">
                   <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
+                  <button className="button is-primary" >
+                    <Link to="/products" style={{color:'#fff'}}>
                       En savoir plus
                     </Link>
+                  </button>
+               
                   </div>
                 </div>
                 <div className="column is-12">
@@ -199,9 +221,11 @@ export const IndexPageTemplate = ({
                 </div>
 
                 <div className="column is-12 has-text-centered">
-                  <Link className="btn" to="/contact">
+                <button className="button is-primary" >
+                  <Link to="/contact" style={{color:"#fff"}}>
                     Contactez-nous
                   </Link>
+                </button>  
                 </div>
               </div>
             </div>
@@ -211,7 +235,7 @@ export const IndexPageTemplate = ({
     </section>
     <LeafletMap />
   </div>
-);
+)};
 
 IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
