@@ -53,7 +53,7 @@ conduite_pricing:
         - frais d'accompagnement examen pratique
     - plan: Spéciale étudiant
       price: 1100 €
-      description: forait étudiant
+      description: forfait étudiant
       items:
         - Frais administratif
         - code 3 mois avec enseignant
@@ -65,15 +65,6 @@ main:
   description: >
     Nos deux formules combinant code et conduite vous garantissent une formation
     complète aux examens théorique et pratique.
-  image1:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/alexis-antoine-ns6ugws2xcm-unsplash.jpg
-  image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
-  image3:
-    alt: Coffee beans
-    image: /img/products-grid1.jpg
 pricing:
   heading: Conduite accompagnée(AAC)
   description: La conduite accompagnée est aussi appelée Apprentissage Anticipé de
@@ -81,7 +72,7 @@ pricing:
     effet l’âge minimum pour passer le code de la route pour un candidat inscrit
     en conduite accompagnée, contre 17 ans en formation classique.
   plans:
-    - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
+    - description: formule complète conduite accompagnée
       items:
         - Code 3 mois (avec enseignant)
         - 20 heures de conduite

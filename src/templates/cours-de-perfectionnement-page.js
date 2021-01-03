@@ -1,6 +1,7 @@
 import React from 'react'
 import { Collapse } from 'antd';
 import Layout from '../components/Layout'
+import Separator from '../components/Separator';
 
 
 
@@ -36,8 +37,11 @@ export const CoursDePerfectionnementTemplate = () => {
                 </p>             
             <div className='column is-one-quarter'></div>
         </div>
+        <div className="has-text-centered">
+            <Separator />
+          </div> 
         <div className='columns'>
-        <hr style={{ width: "30%", margin: '5em auto', height: '5px', backgroundColor:'#BD1A1A'}}/>
+       
       
         </div>
         <h2 className='is-size-2 has-text-centered'>Quelques raisons de s'inscrire à des cours de perfectionnement</h2>

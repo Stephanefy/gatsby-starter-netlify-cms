@@ -23,11 +23,17 @@ export const FormationB78PageTemplate = () => {
     <h1 className="is-size-1 has-text-weight-semibold has-text-centered">
             Formations B78
         </h1>
-        <p className="column is-10 is-size-6 has-text-centered" style={{margin: 'auto'}}>
+        <p className="column is-10 is-size-6 has-text-centered has-text-grey-dark has-text-left" style={{margin: 'auto'}}>
         Cette formation à pour but de mettre en confiance l'élève venant de voiture embrayage automatique su une voiture avec embrayage manuel.
+        <p/>
+        <p>
         Cette formation doit se faire sur une voiture manuelle avec un moniteur diplômé de l'autorisation d'enseigner.
+        </p>
+        <p>
         Le déroulement des séances se fait sur une durée de 7 heures et se décompose de plusieurs exercices.
         Cette formation est est possible trois mois après l'obtention préalable du permis boîte automatique.
+        </p>
+
         </p>
         <div className="has-text-centered">
             <Separator />

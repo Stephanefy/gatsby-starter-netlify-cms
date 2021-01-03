@@ -52,6 +52,7 @@ return(
               >
                 {subheading}
               </h1>
+              <div className="my-2">
               <button className="button is-primary" >
                 <Link to="/contact" style={{color:'#fff'}}>
                   Nous contacter
@@ -67,6 +68,8 @@ return(
                   }
                 </span>
               </button>
+              </div>
+
        
               </div>
               <div className="column is-6">
@@ -78,7 +81,7 @@ return(
               <div className="content">
                 <div className="content">
                   <div className="tile" data-sal="fade">
-                    <h1 className="title">{mainpitch.title}</h1>
+                    <h3 className="title is-size-3">{mainpitch.title}</h3>
                   </div>
                   <div className="tile">
                     <p className="is-size-5">{mainpitch.description}</p>
@@ -86,7 +89,7 @@ return(
                 </div>
                 <div className="columns">
                   <div className="column is-12 ">
-                    <h3 className="has-text-weight-semibold is-size-2">
+                    <h3 className="has-text-weight-semibold is-size-3">
                       {heading}
                     </h3>
                   </div>
@@ -119,7 +122,7 @@ return(
                   data-sal="slide-right"
                   data-sal-duration="500" 
                 >
-                  <div className="column is-size-6">
+                  <div className="column is-size-6 has-text-grey-dark	">
                     <h3>Formules adaptées</h3>
                     <p>
                       Chaque formule que nous proposons a été pensée pour que
