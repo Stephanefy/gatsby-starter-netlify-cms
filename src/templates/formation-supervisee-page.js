@@ -20,7 +20,7 @@ export const FormationCourSuperviseTemplate = () => {
             La conduite supervisée (CS)
           </h1>
           <p
-            className="column is-10 is-size-6 has-text-centered"
+            className="column is-10 is-size-4 has-text-centered"
             style={{margin: "auto"}}
           >
       Un candidat souhaitant conduire avec un proche sans suivre un apprentissage anticipé de la conduite peut solliciter une inscription en conduite supervisée. Dans ce cas, l’âge minimum pour passer le code de la route est de 17 ans, comme pour tout candidat classique. Le candidat doit également suivre une formation en conduite avec un enseignant avant d’obtenir l’autorisation de conduire avec son accompagnateur.

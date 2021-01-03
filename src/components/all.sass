@@ -16,15 +16,19 @@ $black: #2b2523
 $card-content-padding: 0.8rem
 
 
-
+p
+  color:#635e69 !important
 
 .navbar
   font-size: 1rem
   height: 8vh
   z-index: 2
 
+.navbar-link:not(.is-arrowless)::after
+  border-color:#d01c1c !important
 
-
+a.navbar-item:hover,a.navbar-link:hover
+  color: #d01c1c !important
 
 .content .taglist
   list-style: none

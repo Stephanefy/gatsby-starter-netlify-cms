@@ -122,7 +122,7 @@ return(
                   data-sal="slide-right"
                   data-sal-duration="500" 
                 >
-                  <div className="column is-size-6 has-text-grey-dark	">
+                  <div className="column is-size-6">
                     <h3>Formules adaptées</h3>
                     <p>
                       Chaque formule que nous proposons a été pensée pour que

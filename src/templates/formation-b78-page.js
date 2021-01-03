@@ -23,7 +23,7 @@ export const FormationB78PageTemplate = () => {
     <h1 className="is-size-1 has-text-weight-semibold has-text-centered">
             Formations B78
         </h1>
-        <p className="column is-10 is-size-6 has-text-centered has-text-grey-dark has-text-left" style={{margin: 'auto'}}>
+        <p className="column is-10 is-size-6 has-text-centered has-text-left" style={{margin: 'auto'}}>
         Cette formation à pour but de mettre en confiance l'élève venant de voiture embrayage automatique su une voiture avec embrayage manuel.
         <p/>
         <p>

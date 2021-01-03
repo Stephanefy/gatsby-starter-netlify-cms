@@ -34,7 +34,7 @@ export const ExamenTheoriqueTemplate = () => {
           <div className="column"></div>
 
           <div className="column is-10">
-            <h1 className="is-size-1 has-text-weight-semibold has-text-left">
+            <h1 className="is-size-1 has-text-weight-semibold has-text-centered">
               Éxamen théorique
             </h1>
           </div>
@@ -43,7 +43,7 @@ export const ExamenTheoriqueTemplate = () => {
         <div className="columns mx-4">
           <div className="column"></div>
 
-          <p className="column is-10 is-size-4 has-text-left">
+          <p className="column is-10 is-size-4 has-text-centered">
             L’examen du code de la route est un examen officiel. Il s’agit
             d’évaluer si les candidats sont en mesure de comprendre ce qui se
             passe autour de leur voiture, ainsi qu’à l’intérieur, d’appréhender

@@ -52,10 +52,12 @@ export const FormationB78PageTemplate = () => {
             La conduite accompagnée (AAC)
           </h1>
           <p
-            className="column is-10 is-size-5 has-text-centered"
-            style={{margin: "auto"}}
+            className="is-size-5 has-text-centered"
           >
-          La conduite accompagnée permet aux jeunes d’acquérir davantage d’expérience avant l’examen du permis de conduire ou entre deux présentations à l’examen. C'est son principal avantage, mais pas le seul.
+          La conduite accompagnée permet aux jeunes d’acquérir davantage d’expérience avant l’examen du permis de conduire ou entre deux présentations à l’examen. 
+          </p>
+          <p className="is-size-5 has-text-centered">
+          C'est son principal avantage, mais pas le seul.
           </p>
         </div>
         <div className="has-text-centered">

@@ -152,6 +152,7 @@ export default class BlogIndexPage extends React.Component {
                       de permis de conduire (CERFA 02), le document
                       indispensable et obligatoire lors des cours théoriques et
                       pratiques. Dans ce livret se trouvent :
+                    </p>  
                       <ul style={{marginTop: "1rem"}}>
                         <li>
                           - Les documents obligatoires concernant les différents
@@ -163,6 +164,7 @@ export default class BlogIndexPage extends React.Component {
                           formation
                         </li>
                       </ul>
+                    <p>  
                       Ce livret guide l’apprenti et lui permet de savoir « où il
                       en est » mais aussi et surtout « où il va », ce qui lui
                       permettra de devenir progressivement autonome et

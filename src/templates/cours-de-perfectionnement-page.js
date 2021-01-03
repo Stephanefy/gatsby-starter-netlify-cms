@@ -31,7 +31,7 @@ export const CoursDePerfectionnementTemplate = () => {
         </h1>
         <div className='columns'>
         <div className="column is-one-quarter"></div>
-        <p className="column is-6 is-size-4 has-text-left">
+        <p className="column is-6 is-size-4 has-text-centered">
                     Vous n'avez pas conduit pendant un moment, Vous venez d'arriver sur l'île de la Réunion et souhaitez prendre vos marques sur ses routes, tout en recevant des conseils avisés d'un moniteur agréés et expérimentés.
                     Nous vous proposons également des cours de perfectionnement !
                 </p>             
