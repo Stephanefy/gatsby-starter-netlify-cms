@@ -1,7 +1,17 @@
+const {
+  NODE_ENV,
+  URL: NETLIFY_SITE_URL = 'https://www.autoecole-sainteclotilde.re',
+  DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
+  CONTEXT: NETLIFY_ENV = NODE_ENV,
+} = process.env
+const isNetlifyProduction = NETLIFY_ENV === 'production'
+const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL
+
+
 module.exports = {
   siteMetadata: {
     title: 'Auto-école Sainte-Clotilde',
-    siteUrl: `https://www.autoecole-sainteclotilde.re`,
+    siteUrl,
     description:
       'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
   },
@@ -21,9 +31,22 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://www.autoecole-sainteclotilde.re',
-        sitemap: 'https://www.autoecole-sainteclotilde.re/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
+        resolveEnv: () => NETLIFY_ENV,
+        env: {
+          production: {
+            policy: [{ userAgent: '*' }],
+          },
+          'branch-deploy': {
+            policy: [{ userAgent: '*', disallow: ['/'] }],
+            sitemap: null,
+            host: null,
+          },
+          'deploy-preview': {
+            policy: [{ userAgent: '*', disallow: ['/'] }],
+            sitemap: null,
+            host: null,
+          },
+        },
       }
     },
     {
