@@ -45,7 +45,7 @@ const Navbar = () =>  {
       <StaticQuery
         query={graphql`
           query NavbarQuery {
-          imageSharp(id: {eq: "625aae25-bcf3-5cea-847a-2bd825214020"}) {
+          imageSharp(id: {eq: "81d8313a-8a0d-5a10-b2b7-f39c1a3a8954"}) {
             fluid {
               base64
               tracedSVG

@@ -8,7 +8,7 @@ const Footer = props => {
       <StaticQuery
        query={graphql`
           query FooterQuery {
-          imageSharp(id: {eq: "47084a99-9e54-574d-9b6f-b3f3671dd6d6"}) {
+          imageSharp(id: {eq: "371176e9-5d8c-5948-9306-60d8a6dda94e"}) {
             fluid {
               originalImg
               aspectRatio
