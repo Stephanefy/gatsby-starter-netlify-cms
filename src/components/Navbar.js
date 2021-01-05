@@ -68,7 +68,7 @@ const Navbar = () =>  {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={data.imageSharp.fluid.src} alt="logo" />
+              <img src={data.imageSharp.fluid.src} alt="logo Sainte-clotilde" />
             </Link>
             {/* Hamburger menu */}
             <div
