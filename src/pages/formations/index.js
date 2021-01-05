@@ -57,17 +57,16 @@ export default class BlogIndexPage extends React.Component {
                 <div className="column is-10 is-offset-1 ">
                   <p className="has-text-left is-size-5">
                     L’ automobile est devenue un outil social indispensable pour
-                    une grande majorité des jeunes.Au - delà du plaisir de
-                    conduire, l’ utilisation d’ une voiture est souvent
+                    une grande majorité des jeunes. <br/>Au-delà du plaisir de
+                    conduire, l’utilisation d’ une voiture est souvent
                     indispensable pour les études, le travail ou les
-                    loisirs.Rouler en sécurité est donc une nécessité pour tous.
+                    loisirs. Rouler en sécurité est donc une nécessité pour tous.
                     Les conducteurs débutants représentent une part trop
-                    importante des tués et des blessés sur la route.Un nouveau
+                    importante des tués et des blessés sur la route. Un nouveau
                     programme de formation a donc été mis en place pour
-                    renforcer l’ éducation routière. L’ objectif général étant
-                    d’ amener tout automobiliste débutant à la maîtrise de
-                    compétences en termes de savoirs, savoir - faire, savoir -
-                    être et savoir - devenir.
+                    renforcer l’éducation routière. L’objectif général étant
+                    d’amener tout automobiliste débutant à la maîtrise de
+                    compétences en termes de savoirs, savoir-faire, savoir-être et savoir-devenir.
                   </p>
                 </div>
               </div>

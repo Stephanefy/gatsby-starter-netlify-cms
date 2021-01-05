@@ -1,39 +1,66 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import logo from '../img/ae-stclotilde-fontonly.svg';
+import React, {useState, useEffect} from 'react'
+import { Link, StaticQuery } from 'gatsby'
 
-const Navbar = class extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      active: false,
-      navBarActiveClass: '',
-    }
-  }
+const Navbar = () =>  {
+  // constructor(props) {
+  //   super(props)
+  //   this.state = {
+  //     active: false,
+  //     navBarActiveClass: '',
+  //   }
+  // }
+  const [isActive, setIsActive] = useState(false);
+  const [navBarActiveClass, setNavBarActiveClass] = useState("")
 
-  toggleHamburger = () => {
+  const toggleHamburger = () => {
     // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
+    // this.setState(
+    //   {
+    //     active: !this.state.active,
+    //   },
+    setIsActive(!isActive)
       // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: 'is-active',
-            })
-          : this.setState({
-              navBarActiveClass: '',
-            })
-      }
-    )
+      // () => {
+      //   // set the class in state for the navbar accordingly
+      //   this.state.active
+      //     ? this.setState({
+      //         navBarActiveClass: 'is-active',
+      //       })
+      //     : this.setState({
+      //         navBarActiveClass: '',
+      //       })
+      // }
+    //)
+    // () => {
+    //   isActive ? setNavBarActiveClass("is-active") : setNavBarActiveClass("");
+    // }
   }
 
-  render() {
+  useEffect(() => {
+    isActive ? setNavBarActiveClass("is-active") : setNavBarActiveClass("");   
+  }, [isActive])
+
+
     return (
-      <nav
+      <StaticQuery
+        query={graphql`
+          query NavbarQuery {
+          imageSharp(id: {eq: "625aae25-bcf3-5cea-847a-2bd825214020"}) {
+            fluid {
+              base64
+              tracedSVG
+              aspectRatio
+              srcWebp
+              srcSetWebp
+              originalName
+              src
+            }
+          }
+        }
+       `
+       }
+       render={data => 
+        <nav
         className="navbar is-fixed-top has-shadow"
         role="navigation"
         aria-label="main-navigation"
@@ -41,14 +68,14 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="logo" style={{ maxHeight:'2.3rem' }} />
+              <img src={data.imageSharp.fluid.src} alt="logo" />
             </Link>
             {/* Hamburger menu */}
             <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
+              className={`navbar-burger burger ${navBarActiveClass}`}
               data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-              onKeyDown={() =>this.toggleHamburger()}
+              onClick={() => toggleHamburger()}
+              onKeyDown={() => toggleHamburger()}
             >
               <span />
               <span />
@@ -57,7 +84,7 @@ const Navbar = class extends React.Component {
           </div>
           <div
             id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
+            className={`navbar-menu ${navBarActiveClass}`}
           >
             <div className="navbar-end">
               <Link className="navbar-item" to="/">
@@ -101,8 +128,10 @@ const Navbar = class extends React.Component {
           </div>
         </div>
       </nav>
+        }
+      />
     )
   }
-}
+
 
 export default Navbar

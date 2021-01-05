@@ -88,13 +88,17 @@ export const FormationCourSuperviseTemplate = () => {
             />
             <Step
               title="E/ Qui peut être accompagnateur ?"
-              description="L'accompagnateur doit:
-• être titulaire du permis B (permis automobile) depuis au moins cinq ans sans interruption;
-• avoir obtenu l'accord de son assureur;
-• être mentionné dans le contrat signé avec l'école de conduite.
+              description={<div>
+              <p>L'accompagnateur doit:</p>
+              <ul>
+                <li>• être titulaire du permis B (permis automobile) depuis au moins cinq ans sans interruption;</li>
+                <li>• avoir obtenu l'accord de son assureur;</li>
+                <li>• être mentionné dans le contrat signé avec l'école de conduite.</li>
+              </ul>
 
-Il est possible d'avoir plusieurs accompagnateurs, également hors du cadre familial."
-            />
+Il est possible d'avoir plusieurs accompagnateurs, également hors du cadre familial.
+              </div>}
+            /> 
           </Steps>
           
         </div>

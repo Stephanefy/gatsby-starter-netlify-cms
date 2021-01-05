@@ -42,7 +42,7 @@ export default class Index extends React.Component {
     return (
       <Layout>
         <section className="section" style={{marginTop: '100px'}}>
-        <div className='columns is-centered'>
+        <div className='columns is-centered is-mobile'>
           <img src={illuHoraires} alt="contact" width="400" />
         </div>  
           <div className="container">

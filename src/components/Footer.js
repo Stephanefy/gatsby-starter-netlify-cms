@@ -1,19 +1,30 @@
 import React from 'react'
-import { Link } from 'gatsby'
-
-import logo from '../img/logo-ae-sainte-clotilde.svg'
+import { Link, graphql, StaticQuery } from 'gatsby'
+import Img from "gatsby-image"
 import facebook from '../img/social/facebook.svg'
 
-
-const Footer = class extends React.Component {
-  render() {
-    return (
-      <footer className="footer has-background-light">
+const Footer = props => {
+   return (
+      <StaticQuery
+       query={graphql`
+          query FooterQuery {
+          imageSharp(id: {eq: "47084a99-9e54-574d-9b6f-b3f3671dd6d6"}) {
+            fluid {
+              originalImg
+              aspectRatio
+              tracedSVG
+              base64
+            }
+          }
+        }
+       `
+       }
+       render={data => <footer className="footer has-background-light">
         <div className="content has-text-centered block" data-sal='zoom-in' data-sal-duration='200ms'>
           <img
-            src={logo}
+            src={data.imageSharp.fluid.originalImg}
             alt="logo"
-            style={{ width: '16em', height: '10em', marginBottom: '5px' }}
+            style={{ width: '12em', height: '10em', marginBottom: '5px' }}
           />
           <div className="columns is-centered" >
             <div className="column is-half">
@@ -80,7 +91,7 @@ const Footer = class extends React.Component {
                   </section>
                 </div>
               <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
+                <a title="facebook" href="https://www.facebook.com/autoecolesainteclotilde/">
                   <img
                     src={facebook}
                     alt="Facebook"
@@ -92,8 +103,11 @@ const Footer = class extends React.Component {
           </div>
         </div>
       </footer>
-    )
-  }
+       } />
+    );
 }
 
 export default Footer
+
+
+

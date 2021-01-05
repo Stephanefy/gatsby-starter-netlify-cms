@@ -13,7 +13,7 @@ module.exports = {
     title: 'Auto-école Sainte-Clotilde',
     siteUrl,
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      "Vous cherchez une auto-école sur l'île de La Réunion ? L'auto-école Sainte-Clotilde vous propose différentes formules pour vous préparer au passage du code de la route et du permis de conduire.",
   },
   plugins: [
     'gatsby-plugin-sitemap',

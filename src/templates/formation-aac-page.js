@@ -70,10 +70,29 @@ D’une durée de 1an, l’AAC vous permettra de parcourir au minimum 3000 km et
               />
               <Step
                 title="B/ Avantages"
-                description="Outre l’apport non négligeable d’expérience pour l’élève suivant la formation AAC, la conduite accompagnée comporte son lot d’avantages :
-- Taux de réussite à l’examen du permis plus élevé que les formations classiques
-- Période probatoire de 2 ans contre 3 ans pour les formations classiques
-- Assurance de la voiture plus faible durant la période probatoire"
+                description={
+                  <div>
+                    <p>
+                      Outre l’apport non négligeable d’expérience pour l’élève
+                      suivant la formation AAC, la conduite accompagnée comporte
+                      son lot d’avantages :
+                    </p>
+                    <ul>
+                      <li>
+                        - Taux de réussite à l’examen du permis plus élevé que
+                        les formations classiques
+                      </li>
+                      <li>
+                        - Période probatoire de 2 ans contre 3 ans pour les
+                        formations classiques
+                      </li>
+                      <li>
+                        - Assurance de la voiture plus faible durant la période
+                        probatoire
+                      </li>
+                    </ul>
+                  </div>
+                }
               />
               <Step
                 title="C/ Formation initiale"
@@ -82,16 +101,41 @@ A l’issue de cette période, l’Auto-Ecole délivre à l’élève une attest
               />
               <Step
                 title="D/ Déroulement de la formation"
-                description=" Un rendez-vous préalable d’une durée minimum de deux heures est fixé au candidat par l’Auto-Ecole. Il se déroule en présence d’au moins un accompagnateur et d’un moniteur.
-
-Après ce premier rendez-vous, la période de conduite accompagnée doit durer au moins une année. Le candidat doit avoir parcouru au moins 3000 km en présence du ou des accompagnateurs mentionnés initialement. Le logo « conduite accompagnée » doit figurer à l’arrière du véhicule et le livret d’apprentissage délivré par l’Auto-Ecole doit y être conservé pour être présenté aux forces de l’ordre en cas de contrôle.
-L’élève est libre de conduire où il le souhaite en France. En revanche, la circulation en conduite accompagnée à l’étranger est interdite.
-Au cours de la période de conduite accompagnée, le candidat doit également participer à au moins deux rendez-vous pédagogiques d’une durée de trois heures chacun :
-
-- Le premier a lieu entre 4 et 6 mois après la date de délivrance de l’attestation de fin de formation initiale ;
-- Le second a lieu après que 3000 km ont été parcourus.
-
-Une fois cette procédure accomplie et lorsque l’élève a atteint l’âge minimal de 17 ans et demi, l’Auto-Ecole peut alors le présenter à l’examen pratique."
+                description={
+                  <div>
+                    <p>
+                    Un rendez-vous préalable d’une durée minimum de deux heures
+                    est fixé au candidat par l’Auto-Ecole. Il se déroule en
+                    présence d’au moins un accompagnateur et d’un moniteur.
+                    Après ce premier rendez-vous, la période de conduite
+                    accompagnée doit durer au moins une année. Le candidat doit
+                    avoir parcouru au moins 3000 km en présence du ou des
+                    accompagnateurs mentionnés initialement. Le logo « conduite
+                    accompagnée » doit figurer à l’arrière du véhicule et le
+                    livret d’apprentissage délivré par l’Auto-Ecole doit y être
+                    conservé pour être présenté aux forces de l’ordre en cas de
+                    contrôle. L’élève est libre de conduire où il le souhaite en
+                    France. En revanche, la circulation en conduite accompagnée
+                    à l’étranger est interdite. Au cours de la période de
+                    conduite accompagnée, le candidat doit également participer
+                    à au moins deux rendez-vous pédagogiques d’une durée de
+                    trois heures chacun :
+                    </p>
+                    <ul>
+                      <li>
+                        - Le premier a lieu entre 4 et 6 mois après la date de
+                        délivrance de l’attestation de fin de formation initiale
+                        ;
+                      </li>
+                      <li>
+                        - Le second a lieu après que 3000 km ont été parcourus.
+                      </li>
+                    </ul>
+                    Une fois cette procédure accomplie et lorsque l’élève a
+                    atteint l’âge minimal de 17 ans et demi, l’Auto-Ecole peut
+                    alors le présenter à l’examen pratique.
+                  </div>
+                }
               />
               <Step
                 title="E/ Réussite à l’examen"
