@@ -53,7 +53,7 @@ const Navbar = () =>  {
               srcWebp
               srcSetWebp
               originalName
-              src
+              originalImg
             }
           }
         }
@@ -68,7 +68,7 @@ const Navbar = () =>  {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={data.imageSharp.fluid.src} alt="logo Sainte-clotilde" />
+              <img src={data.imageSharp.fluid.originalImg} alt="logo Sainte-clotilde" />
             </Link>
             {/* Hamburger menu */}
             <div
