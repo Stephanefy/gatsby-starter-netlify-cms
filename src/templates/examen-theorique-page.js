@@ -125,12 +125,12 @@ Si, par hasard, vous n’avez pas obtenu le résultat souhaité, surtout : pas d
         </div>
       </section>
       <div className="columns is-mobile is-centered my-6">
-        <div className='column is-10'>
+        <div className='container'>
         <SizeMe
           render={({size}) => (
-            <Document file={examenTheoPdf} className="card">
+            <Document file={examenTheoPdf} className="card" width={size.width ? size.width : 1}>
               <Page pageNumber={pageNumber} width={size.width ? size.width : 1} />
-              <div className="columns is-mobile is-centered my-4">
+              <div className="is-flex is-justify-content-center">
                 {pageNumber > 1 && (
                   <button
                     onClick={goPreviousPage}

@@ -36,14 +36,10 @@ return(
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
-          <div className="columns">
-            <div
-              style={{
-                lineHeight: "1.3",
-              }}
-              className="column is-6"
-            >
-              <h1
+        <div className="is-flex">
+        <div>
+        <div className="my-2">
+        <h1
                 className="has-text-weight-bold is-size-1"
                 style={{
                   color: "#bd1a1a",
@@ -52,13 +48,12 @@ return(
               >
                 {subheading}
               </h1>
-              <div className="my-2">
-              <button className="button is-primary" >
+              <button className="button is-primary my-2">
                 <Link to="/contact" style={{color:'#fff'}}>
                   Nous contacter
                 </Link>
               </button>
-              <button className="button is-primary mx-4"
+              <button className="button is-primary mx-2 my-2"
                 onMouseEnter={() => setIsShown(true)}
                 onMouseLeave={() => setIsShown(false)}
               >
@@ -69,12 +64,26 @@ return(
                 </span>
               </button>
               </div>
+        </div>
 
-       
-              </div>
               <div className="column is-6">
                 <img src={RoadTripIllu} width="800" alt="illustration"/>
               </div>
+        </div>
+
+          <div className="columns">
+            <div
+              style={{
+                lineHeight: "1.3",
+              }}
+              className="column is-6"
+            >
+          
+  
+
+       
+              </div>
+       
           </div>
           <div className="columns">
             <div className="column is-12">

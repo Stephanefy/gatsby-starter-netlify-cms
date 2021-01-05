@@ -21,7 +21,7 @@ const Layout = ({children }) => {
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
-
+        <link rel="canonical" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
