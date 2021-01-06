@@ -82,7 +82,7 @@ const Footer = props => {
                       <li>
                           02 62 28 46 25
                       </li>
-                      <li>
+                      <li className="is-size-6">
                         mounichettymareannick.autoecoles@sfr.fr.
                       </li>
                     </ul>
