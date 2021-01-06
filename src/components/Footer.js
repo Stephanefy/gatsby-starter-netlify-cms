@@ -6,23 +6,22 @@ import facebook from '../img/social/facebook.svg'
 const Footer = props => {
    return (
       <StaticQuery
-       query={graphql`
+       query= {graphql`
           query FooterQuery {
-          imageSharp(id: {eq: "371176e9-5d8c-5948-9306-60d8a6dda94e"}) {
-            fluid {
-              originalImg
-              aspectRatio
-              tracedSVG
-              base64
-            }
+            file(relativePath: { eq: "logo-ae-sainteclotilde-letterOnly.png" }) {
+             childImageSharp {
+          fluid(maxWidth:500) {
+           ...GatsbyImageSharpFluid
           }
+        }
+      }
         }
        `
        }
        render={data => <footer className="footer has-background-light">
         <div className="content has-text-centered block" data-sal='zoom-in' data-sal-duration='200ms'>
           <img
-            src={data.imageSharp.fluid.originalImg}
+            src={require('../../static/img/logo-ae-sainte-clotilde.png')}
             alt="logo"
             style={{ width: '12em', height: '10em', marginBottom: '5px' }}
           />

@@ -68,7 +68,7 @@ const Navbar = () =>  {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={data.imageSharp.fluid.originalImg} alt="logo Sainte-clotilde" />
+              <img src={require('../../static/img/logo-ae-sainteclotilde-letterOnly.png')} alt="logo Sainte-clotilde" />
             </Link>
             {/* Hamburger menu */}
             <div
