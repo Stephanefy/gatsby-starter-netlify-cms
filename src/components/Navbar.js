@@ -67,7 +67,7 @@ const Navbar = () =>  {
       >
         <div className="container">
           <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
+            <Link to="/" className="navbar-item" title="Logo" style={{width:"150px"}}>
               <img src={require('../../static/img/logo-ae-sainteclotilde-letterOnly.png')} alt="logo Sainte-clotilde" />
             </Link>
             {/* Hamburger menu */}
