@@ -35,12 +35,11 @@ return(
         </div>
     <section className="section section--gradient">
       <div className="container">
-        <div className="section">
         <div className="is-flex">
         <div>
         <div className="my-2">
         <h1
-                className="has-text-weight-bold is-size-1"
+                className="has-text-weight-bold is-size-2"
                 style={{
                   color: "#bd1a1a",
                   paddingTop:'4rem',
@@ -78,14 +77,10 @@ return(
               }}
               className="column is-6"
             >
-          
-  
-
-       
               </div>
        
           </div>
-          <div className="columns">
+          <div className="columns is-mobile">
             <div className="column is-12">
               <div className="content">
                 <div className="content">
@@ -96,7 +91,7 @@ return(
                     <p className="is-size-5">{mainpitch.description}</p>
                   </div>
                 </div>
-                <div className="columns">
+                <div className="columns is-mobile">
                   <div className="column is-12 ">
                     <h3 className="has-text-weight-semibold is-size-3">
                       {heading}
@@ -242,7 +237,6 @@ return(
               </div>
             </div>
           </div>
-        </div>
       </div>
     </section>
     <LeafletMap />

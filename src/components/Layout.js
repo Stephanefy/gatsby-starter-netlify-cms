@@ -16,7 +16,9 @@ const Layout = ({children }) => {
 
     <div css={css`
       font-family: 'Nunito';
-    `}>
+    `}
+    className="container"  
+    >
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
