@@ -86,7 +86,7 @@ const Footer = props => {
                         mounichettymareannick.autoecoles@sfr.fr.
                       </li>
                     </ul>
-
+                    <p>&copy;2020 site conçu et réalisé par <a href="https://www.agensit.re">Agensit</a></p>
                   </section>
                 </div>
               <div className="column is-4 social">
