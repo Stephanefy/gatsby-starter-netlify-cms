@@ -51,7 +51,7 @@ const Footer = props => {
                       </Link>
                     </li> */}
                     <li>
-                      <Link className="navbar-item" to="/products">
+                      <Link className="navbar-item" to="/formules">
                         Formules
                       </Link>
                     </li>
@@ -66,7 +66,7 @@ const Footer = props => {
                       </Link>
                     </li>
                     <li>
-                      <Link className="navbar-item" to="/contact/examples">
+                      <Link className="navbar-item" to="/contact/reglement-interieur">
                         Réglement intérieur
                       </Link>
                     </li>

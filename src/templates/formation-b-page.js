@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import Layout from "../components/Layout";
 import Separator from "../components/Separator";
 import {SizeMe} from "react-sizeme";
+import { Helmet } from 'react-helmet'; 
 
 import {Steps, Result} from "antd";
 
@@ -31,6 +32,7 @@ export const FormationBPageTemplate = () => {
     <>
       <div style={{marginTop: "6rem"}} className="columns">
         <section className="section">
+        <Helmet title={`Formation permis B - Auto-école Sainte-Clotilde`} />
           <div className="column is-10 is-offset-1">
             <h1 className="is-size-1 has-text-weight-semibold has-text-centered">
               Formations B

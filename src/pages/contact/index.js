@@ -3,6 +3,7 @@ import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
 import BusinessHours from '../../components/BusinessHours';
 import LeafletMap from '../../components/Map';
+import { Helmet } from 'react-helmet'; 
 
 
 import illuContact from '../../../static/img/handshake.svg';
@@ -42,6 +43,7 @@ export default class Index extends React.Component {
     return (
       <Layout>
         <section className="section" style={{marginTop: '100px'}}>
+        <Helmet title={`Contact - Auto-école Sainte-Clotilde`}/>
         <div className='columns is-centered'>
           <img src={illuContact} alt="contact" width="400" />
         </div>  

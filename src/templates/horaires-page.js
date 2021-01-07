@@ -3,6 +3,8 @@ import { navigate } from 'gatsby-link'
 import Layout from '../components/Layout'
 import BusinessHours from '../components/BusinessHours';
 import CodeWithTeacher from '../components/CodeWithTeacherHours';
+import { Helmet } from 'react-helmet'; 
+import {graphql} from 'gatsby';
 
 import illuHoraires from '../../static/img/undraw_time_management_30iu.svg';
 
@@ -13,7 +15,7 @@ function encode(data) {
     .join('&')
 }
 
-export default class Index extends React.Component {
+export default class HorairePage extends React.Component {
   constructor(props) {
     super(props)
     this.state = { isValidated: false }
@@ -42,6 +44,7 @@ export default class Index extends React.Component {
     return (
       <Layout>
         <section className="section" style={{marginTop: '100px'}}>
+        <Helmet title={`Horaires - Auto-école Sainte-Clotilde`}/>
         <div className='columns is-centered is-mobile'>
           <img src={illuHoraires} alt="contact" width="400" />
         </div>  
@@ -82,3 +85,13 @@ export default class Index extends React.Component {
     )
   }
 }
+
+export const HorairePageQuery = graphql`
+  query HorairePage{
+    markdownRemark(id: {eq:"e49c3538-4c7a-53e1-a3a4-08aec26e8cba"}){
+      frontmatter{
+        title
+      }
+    }
+  }
+`

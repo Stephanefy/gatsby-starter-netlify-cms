@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {SizeMe} from "react-sizeme";
+import { Helmet } from 'react-helmet'; 
 
 import Layout from "../components/Layout";
 import Separator from "../components/Separator";
@@ -30,6 +31,7 @@ export const ExamenTheoriqueTemplate = () => {
   return (
     <div style={{marginTop: "6rem"}}>
       <section className="section">
+      <Helmet title={`Examen du code de la route - Auto-école Sainte-Clotilde`}/>
         <div className="columns mx-4">
           <div className="column"></div>
 

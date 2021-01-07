@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import {Steps} from "antd";
+import { Helmet } from 'react-helmet'; 
 
 import Layout from '../components/Layout';
 import Separator from '../components/Separator';
@@ -15,6 +16,7 @@ export const FormationCourSuperviseTemplate = () => {
   return (
     <div style={{marginTop: "6rem"}} className="columns">
       <section className="section">
+        <Helmet title={`Conduite supervisée - Auto-école Sainte-Clotilde`}/>
         <div className="column is-10 is-offset-1">
           <h1 className="is-size-1 has-text-weight-semibold has-text-centered">
             La conduite supervisée (CS)

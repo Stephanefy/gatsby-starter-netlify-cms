@@ -1,12 +1,15 @@
 import React from 'react'
 import Layout from '../../components/Layout'
 import Download from '../../components/Download';
+import { Helmet } from 'react-helmet'; 
+
 
 export default class Index extends React.Component {
   render() {
     return (
       <Layout>
         <section className="section">
+        <Helmet title={`Réglement intérieur - Auto-école Sainte-Clotilde`}/>
           <div className="container">
             <div className="content" style={{marginTop: '100px'}}>
             <h2>Ce règlement a pour objet de définir les règles relatives à l’hygiène, à la sécurité ainsi qu’à la discipline nécessaire au bon fonctionnement de l’établissement. Il est applicable par l’ensemble des élèves.</h2>

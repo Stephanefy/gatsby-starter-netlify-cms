@@ -14,6 +14,7 @@ module.exports = {
     siteUrl,
     description:
       "Vous cherchez une auto-école sur l'île de La Réunion ? L'auto-école Sainte-Clotilde vous propose différentes formules pour vous préparer au passage du code de la route et du permis de conduire.",
+    facebook: "https://www.facebook.com/autoecolesainteclotilde/"  
   },
   plugins: [
     'gatsby-plugin-sitemap',

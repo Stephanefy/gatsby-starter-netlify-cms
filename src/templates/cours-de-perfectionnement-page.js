@@ -2,6 +2,7 @@ import React from 'react'
 import { Collapse } from 'antd';
 import Layout from '../components/Layout'
 import Separator from '../components/Separator';
+import { Helmet } from 'react-helmet'; 
 
 
 
@@ -26,6 +27,7 @@ export const CoursDePerfectionnementTemplate = () => {
     return (
     <div style={{ marginTop: '6rem'}}>
     <section className="section">
+        <Helmet title={`Cours de perfectionnement - Auto-école Sainte-Clotilde`}/>
         <h1 className="is-size-1 has-text-weight-semibold has-text-centered">
             Cours de perfectionnement
         </h1>

@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import PropTypes from "prop-types";
 import {Link, graphql} from "gatsby";
+import { Helmet } from 'react-helmet';
 
 import Layout from "../components/Layout";
 import LeafletMap from "../components/Map";
@@ -261,6 +262,7 @@ const IndexPage = ({data}) => {
 
   return (
     <Layout>
+      <Helmet title={`Accueil - ${frontmatter.title}`}/>
       <IndexPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}

@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { Link, StaticQuery } from 'gatsby'
+import { Link, StaticQuery, graphql } from 'gatsby'
 
 const Navbar = () =>  {
   // constructor(props) {
@@ -93,7 +93,7 @@ const Navbar = () =>  {
               <Link className="navbar-item" to="/horaires">
                 Horaires
               </Link>
-              <Link className="navbar-item" to="/products">
+              <Link className="navbar-item" to="/formules">
                 Formules
               </Link>
               <div className="navbar-item has-dropdown is-hoverable">

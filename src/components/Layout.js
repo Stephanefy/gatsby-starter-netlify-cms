@@ -19,7 +19,7 @@ const Layout = ({children }) => {
     `}
     >
       <Helmet>
-        <html lang="en" />
+        <html lang="fr" />
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="canonical" />
@@ -55,14 +55,16 @@ const Layout = ({children }) => {
           />
           
         <meta name="theme-color" content="#fff" />
-
+        <meta name="viewport" content="width=device-width initial-scale=1.0" />
         <meta property="og:type" content="business.business" />
-        <meta property="og:title" content={title} />
+        <meta property="og:title" content={title} key="ogtitle"/>
         <meta property="og:url" content="/" />
         <meta
           property="og:image"
-          content={`${withPrefix('/')}img/og-image.jpg`}
+          content={`${withPrefix('/')}img/logo-ae-sainte-clotilde.svg`}
         />
+        <meta property="og:site_name" content={title} key="ogsitename"/>
+        <meta property="og:description" content={description} key="ogdesc"/>
       </Helmet>
       <Navbar />
       <div>{children}</div>

@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import {graphql} from "gatsby";
+import { Helmet } from 'react-helmet'; 
 import Layout from "../components/Layout";
 import Pricing from "../components/Pricing";
 import Separator from "../components/Separator";
@@ -48,7 +49,7 @@ export const ProductPageTemplate = ({
                   {code_pricing.heading}
                 </h2>
                 <p className="is-size-5">{code_pricing.description}</p>
-                <Pricing data={code_pricing.plans} />
+                <Pricing key={code_pricing.index} data={code_pricing.plans} />
               </div>
             </div>
           </div>
@@ -62,7 +63,7 @@ export const ProductPageTemplate = ({
                 <p className="is-size-5">{main.description}</p>
               </div>
               <div className="column is-12">
-                <Pricing data={conduite_pricing.plans} />
+                <Pricing key={conduite_pricing.index} data={conduite_pricing.plans} />
               </div>
               <div className="columns is-centered">
                 <Separator />
@@ -84,7 +85,7 @@ export const ProductPageTemplate = ({
                 </div>
                 <div className="column is-narrow">
                   <div>
-                    <Pricing data={pricing.plans} />
+                    <Pricing key={pricing.index} data={pricing.plans} />
                   </div>
                 </div>
               </div>
@@ -177,6 +178,7 @@ const ProductPage = ({data}) => {
 
   return (
     <Layout>
+      <Helmet title={`${frontmatter.title} - Auto-école Sainte-Clotilde`} />
       <ProductPageTemplate
         image={frontmatter.image}
         title={frontmatter.title}

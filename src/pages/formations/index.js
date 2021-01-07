@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet'; 
 
 import Layout from "../../components/Layout";
 import ProgFormIllu from "../../../static/img/programme-de-formations.svg";
@@ -23,6 +24,7 @@ export default class BlogIndexPage extends React.Component {
 
     return (
       <Layout>
+        <Helmet title={`Formations - Auto-école Sainte-Clotilde`}/>
         <div
           className="full-width-image-container margin-top-0"
           style={{
