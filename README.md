@@ -1,14 +1,12 @@
-# Gatsby + Netlify CMS Starter
+# Auto-école Sainte-Clotilde à l'ile de la Réunion
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b654c94e-08a6-4b79-b443-7837581b1d8d/deploy-status)](https://app.netlify.com/sites/gatsby-starter-netlify-cms-ci/deploys)
+    Vous cherchez une auto-école sur l'île de La Réunion ? L'auto-école
+    Sainte-Clotilde vous propose différentes formules pour vous préparer au
+    passage du code de la route et du permis de conduire. Marie Annick
+    Mounichetty et son équipe experimentée, vous accompagne et vous prépare au
+    passage des examens théoriques et pratiques.
 
-**Note:** This starter uses [Gatsby v2](https://www.gatsbyjs.org/blog/2018-09-17-gatsby-v2/).
-
-This repo contains an example business website that is built with [Gatsby](https://www.gatsbyjs.org/), and [Netlify CMS](https://www.netlifycms.org): **[Demo Link](https://gatsby-netlify-cms.netlify.com/)**.
-
-It follows the [JAMstack architecture](https://jamstack.org) by using Git as a single source of truth, and [Netlify](https://www.netlify.com) for continuous deployment, and CDN distribution.
-
-## Features
+<!-- ## Features
 
 - A simple landing page with blog functionality built with Netlify CMS
 - Editable Pages: Landing, About, Product, Blog-Collection and Contact page with Netlify Form support
@@ -123,4 +121,4 @@ This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gats
 # CONTRIBUTING
 
 Contributions are always welcome, no matter how large or small. Before contributing,
-please read the [code of conduct](CODE_OF_CONDUCT.md).
+please read the [code of conduct](CODE_OF_CONDUCT.md). -->
