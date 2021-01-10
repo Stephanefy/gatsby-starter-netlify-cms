@@ -67,7 +67,7 @@ return(
         </div>
 
               <div className="column is-6">
-                <img src={RoadTripIllu} width="800" alt="illustration"/>
+                <img src={RoadTripIllu} width="800" height="800" alt="illustration"/>
               </div>
         </div>
 
@@ -113,6 +113,8 @@ return(
                           : logocpf
                       }
                       alt="logo école conduite qualité"
+                      width="400"
+                      height="400"
                     />
                   </div>
                 </div>
@@ -143,7 +145,7 @@ return(
                     </ul>
                   </div>
                   <div className="column is-half">
-                    <img src={illuChoice} alt="divers formules" width="400" />
+                    <img src={illuChoice} alt="divers formules" width="400" height="400"/>
                   </div>
                 </div>
                 <div className="is-flex is-justify-content-flex-end	">
@@ -157,7 +159,7 @@ return(
                   data-sal-duration="500" 
                 >
                   <div className="column">
-                    <img src={illuCar} alt="nos atouts" width="400" />
+                    <img src={illuCar} alt="nos atouts" width="400" height="400"/>
                   </div>
                   <div className="column is-half is-size-6">
                     <h3>

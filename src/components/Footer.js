@@ -95,6 +95,8 @@ const Footer = props => {
                     src={facebook}
                     alt="Facebook"
                     style={{ width: '1em', height: '1em' }}
+                    width="500"
+                    height="500"
                   />
                 </a>
               </div>
