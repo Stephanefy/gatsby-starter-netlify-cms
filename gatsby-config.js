@@ -17,7 +17,12 @@ module.exports = {
     facebook: "https://www.facebook.com/autoecolesainteclotilde/"  
   },
   plugins: [
-    'gatsby-plugin-sitemap',
+    {
+      resolve:'gatsby-plugin-sitemap',
+      options: {
+        exclude: ['/blog/*','/tags/*']
+      }
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
     'gatsby-plugin-antd',

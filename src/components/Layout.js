@@ -8,7 +8,8 @@ import { withPrefix } from 'gatsby'
 import {css} from '@emotion/core';
 
 
-import "fontsource-nunito";
+import "@fontsource/nunito"
+
 
 const Layout = ({children }) => {
   const { title, description } = useSiteMetadata()
