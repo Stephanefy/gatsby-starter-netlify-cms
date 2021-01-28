@@ -33,7 +33,7 @@ code_pricing:
         - Frais accompagnement à l'examen code
 conduite_pricing:
   plans:
-    - plan: Code + conduite 30h
+    - plan: Code + conduite
       price: 980€
       description: Forfait basique
       items:
