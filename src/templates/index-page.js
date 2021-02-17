@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import {Link, graphql} from "gatsby";
 import { Helmet } from 'react-helmet';
 
+import HeroIndexSvg, { ReactComponent as HeroIndex } from '../../static/img/filtered-road-illustration.svg'
 import Layout from "../components/Layout";
 import LeafletMap from "../components/Map";
 import illuChoice from "../../static/img/undraw_select_option_y75i.svg";
@@ -28,11 +29,12 @@ return(
       <div
           className="full-width-image-container margin-top-0"
           style={{
-            backgroundImage: `url('/img/filtered-road-illustration.svg')`,
+            backgroundImage: `url(${HeroIndexSvg})`,
             backgroundSize: `cover`,
             backgroundPosition:`20% 52%`
           }}
         >
+        {/* <img src={HeroIndexSvg} alt="hero-image"/> */}
         </div>
     <section className="section section--gradient">
       <div className="container">

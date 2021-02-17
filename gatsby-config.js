@@ -137,6 +137,12 @@ module.exports = {
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify',
     {
+      resolve: 'gatsby-plugin-svgr',
+      options: {
+        svgo: true,
+      }
+    },
+    {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
           threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
