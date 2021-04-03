@@ -245,10 +245,6 @@ export default class BlogIndexPage extends React.Component {
                       </li>
                     </ul>
                     <p
-                      className="is-size-6"
-                      data-sal="slide-up"
-                      data-sal-relay="300"
-                      data-sal-duration="500"
                     >
                       Après vérification de son identité, l’épreuve débutera par
                       l’installation au poste de conduite et se poursuivra
@@ -286,9 +282,6 @@ export default class BlogIndexPage extends React.Component {
                       size="large"
                       current={this.state.current}
                       onChange={this.onChange}
-                      data-sal="slide-up"
-                      data-sal-relay="300"
-                      data-sal-duration="500"
                     >
                       <Step
                         title="La vérification de la recevabilité des documents d’examen"

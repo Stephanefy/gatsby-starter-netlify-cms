@@ -147,8 +147,14 @@ A l’issue de cette période, l’Auto-Ecole délivre à l’élève une attest
           </div>
         </section>
       </div>
-      <div className="columns is-centered">
-        <h3 className="is-size-3">Les avantages de la conduite accompagnée</h3>
+      <div className="columns is-mobile is-centered">
+        <div className="column"></div>
+        <div className="column is-12" style={{display:'flex', justifyContent:'center'}}>
+          <h3 className="is-size-4">Les avantages de la conduite accompagnée</h3>
+          
+        </div>
+        <div className="column"></div>
+
       </div>
 
       <Carousel effect="scrollx" autoplay>
@@ -236,10 +242,14 @@ A l’issue de cette période, l’Auto-Ecole délivre à l’élève une attest
                   )}
                 </div>
 
-                <div className="columns is-centered my-2">
-                  <p>
-                    Page {pageNumber} / {numPages}
-                  </p>
+                <div className="columns is-mobile is-centered my-2">
+                  <div className="column is-5"></div>
+                  <div className="column is-2">
+                    <p style={{display:'flex', justifyContent:'center'}}>
+                      Page {pageNumber} / {numPages}
+                    </p>
+                  </div>
+                  <div className="column is-5"></div>
                 </div>
               </Document>
             )}

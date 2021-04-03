@@ -28,7 +28,7 @@ export const CoursDePerfectionnementTemplate = () => {
     <div style={{ marginTop: '6rem'}}>
     <section className="section">
         <Helmet title={`Cours de perfectionnement - Auto-école Sainte-Clotilde`}/>
-        <h1 className="is-size-1 has-text-weight-semibold has-text-centered">
+        <h1 className="is-size-2 has-text-weight-semibold has-text-centered">
             Cours de perfectionnement
         </h1>
         <div className='columns'>
@@ -46,7 +46,7 @@ export const CoursDePerfectionnementTemplate = () => {
        
       
         </div>
-        <h2 className='is-size-2 has-text-centered'>Quelques raisons de s'inscrire à des cours de perfectionnement</h2>
+        <h2 className='is-size-3 has-text-centered'>Quelques raisons de s'inscrire à des cours de perfectionnement</h2>
         <div className='columns my-6'>
         
             <div className='column'></div>

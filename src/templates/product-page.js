@@ -41,7 +41,7 @@ export const ProductPageTemplate = ({
         <div className="section">
           <div className="columns is-centered my-4">
             <div className="column is-10">
-              <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
+              <h3 className="has-text-weight-semibold is-size-3">{heading}</h3>
               <p className="is-size-4">{description}</p>
               <div className="column is-12">
                 <Separator />
@@ -68,7 +68,7 @@ export const ProductPageTemplate = ({
               <div className="columns is-centered">
                 <Separator />
               </div>
-              <h2 className="has-text-weight-semibold is-size-2 has-text-centered">
+              <h2 className="has-text-weight-semibold is-size-3 has-text-centered">
                 {pricing.heading}
               </h2>
 
