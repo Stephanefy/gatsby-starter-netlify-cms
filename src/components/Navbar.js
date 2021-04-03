@@ -61,14 +61,14 @@ const Navbar = () =>  {
        }
        render={data => 
         <nav
-        className="navbar is-fixed-top has-shadow"
+        className="navbar has-shadow"
         role="navigation"
         aria-label="main-navigation"
       >
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo" style={{width:"60%"}}>
-              <img src={require('../../static/img/logo-ae-sainteclotilde-letterOnly.png')} alt="logo Sainte-clotilde" width="200" height="200"/>
+              <img src={require('../../static/img/logo-ae-sainteclotilde-letterOnly.png')} alt="logo Sainte-clotilde" width="150" height="200"/>
             </Link>
             {/* Hamburger menu */}
             <div

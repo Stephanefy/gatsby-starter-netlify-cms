@@ -20,31 +20,32 @@ const Layout = ({children }) => {
     `}
     >
       <Helmet>
-        <html lang="fr" />
+        <html lang="fr"/>
         <title>{title}</title>
         <meta name="description" content={description} />
         <link rel="canonical" />
         <link
-          rel="apple-touch-icon"
+          rel="favicon"
           sizes="180x180"
-          href={`${withPrefix('/')}img/apple-touch-icon.png`}
+          href={`${withPrefix('/')}img/favicon-32x32.png`}
         />
         <link
-          rel="icon"
+          rel="favicon"
           type="image/png"
           href={`${withPrefix('/')}img/favicon-32x32.png`}
           sizes="32x32"
         />
         <link
-          rel="icon"
+          rel="favicon"
           type="image/png"
           href={`${withPrefix('/')}img/favicon-16x16.png`}
           sizes="16x16"
         />
 
         <link
-          rel="mask-icon"
-          href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
+          rel="favicon"
+          href={`${withPrefix('/')}img/favicon-32x32.png`}
+          siezs="32x32"
           color="#ff4400"
         />
         <link 

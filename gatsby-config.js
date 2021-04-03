@@ -136,6 +136,7 @@ module.exports = {
       },
     }, // must be after other CSS plugins
     'gatsby-plugin-netlify',
+    'gatsby-plugin-optimize-svgs',
     {
       resolve: 'gatsby-plugin-svgr',
       options: {
