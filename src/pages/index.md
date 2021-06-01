@@ -11,7 +11,9 @@ mainpitch:
     Sainte-Clotilde vous propose différentes formules pour vous préparer au
     passage du code de la route et du permis de conduire. Marie Annick
     Mounichetty et son équipe experimentée, vous accompagne et vous prépare au
-    passage des examens théoriques et pratiques.
+    passage des examens théoriques et pratiques.   
+  descriptionCar: >  
+    Nos Moniteurs vous forment au permis de conduire sur différentes voitures (deux polos, une golf et une 208)
 intro:
 logocpf: /img/logo_ecole_de_conduite_cpf.png
 description: Le label " Qualité des informations au sein des écoles de conduite"

@@ -90,8 +90,9 @@ return(
                   <div className="tile" data-sal="fade">
                     <h3 className="title is-size-3">{mainpitch.title}</h3>
                   </div>
-                  <div className="tile">
+                  <div className="tile is-flex-direction-column">
                     <p className="is-size-5">{mainpitch.description}</p>
+                    <p className="is-size-5">{mainpitch.descriptionCar}</p>
                   </div>
                 </div>
                 <div className="columns is-mobile">
@@ -140,7 +141,7 @@ return(
                     </p>
                     <ul style={{listStyleType: "none"}}>
                       <li>Formules code</li>
-                      <li>Formule code et conduite(30h)</li>
+                      <li>Formule code et conduite(20h ou 30h)</li>
                       <li>Formule conduite supervisée</li>
                       <li>Formule étudiante</li>
                       <li>Formule AAC</li>
@@ -308,6 +309,7 @@ export const pageQuery = graphql`
         mainpitch {
           title
           description
+          descriptionCar
         }
         description
         logocpf {

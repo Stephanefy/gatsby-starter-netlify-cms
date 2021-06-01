@@ -39,7 +39,7 @@ conduite_pricing:
       items:
         - Frais administratif
         - code 3 mois avec enseignant
-        - 30h de conduite
+        - 20h ou 30h de conduite
         - frais d'accompagnement à l'examen théorique général
         - frais d'accompagnement examen pratique
     - plan: Conduite supervisée
@@ -48,7 +48,7 @@ conduite_pricing:
       items:
         - Frais administratif
         - code 3 mois avec enseignant
-        - 30h de conduite
+        - 20h ou 30h de conduite
         - frais d'accompagnement à l'examen théorique général
         - frais d'accompagnement examen pratique
     - plan: Spéciale étudiant
@@ -57,7 +57,7 @@ conduite_pricing:
       items:
         - Frais administratif
         - code 3 mois avec enseignant
-        - 30h de conduite
+        - 20h ou 30h de conduite
         - frais d'accompagnement à l'examen théorique général
         - frais d'accompagnement examen pratique
 main:
@@ -75,7 +75,7 @@ pricing:
     - description: formule complète conduite accompagnée
       items:
         - Code 3 mois (avec enseignant)
-        - 20 heures de conduite
+        - 20h ou 30h de conduite
         - Frais accompagnement à l'examen code
         - Frais accompagnement à l'examen de conduite
         - Rendez-vous préalable Kit pédagogique (livre de code + livret

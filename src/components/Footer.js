@@ -74,10 +74,11 @@ const Footer = props => {
                 </section>
               </div>
               <div className="column is-4">
-                  <section className='menu'>
-                    <ul className="has-text-centered is-size-5" style={{listStyleType:"none", marginLeft:'0'}}>
+                  <section className='menu is-flex-direction-column is-justify-content-space-between'>
+                    <ul className="has-text-centered is-size-6" style={{listStyleType:"none", marginLeft:'0'}}>
                       <li>
-                      18 RUE LORY LES HAUTS, 97490 STE CLOTILDE
+                      18 RUE LORY LES HAUTS, 97490
+                      STE CLOTILDE
                       </li>
                       <li>
                           02 62 28 46 25
@@ -86,10 +87,10 @@ const Footer = props => {
                         mounichettymareannick.autoecoles@sfr.fr.
                       </li>
                     </ul>
-                    <p>&copy;2020 site conçu et réalisé par <a href="https://www.agensit.re">Agensit</a></p>
+                    <p style={{marginTop:'6.3rem'}}>&copy;2020 site conçu et réalisé par <a href="https://www.agensit.re">Agensit</a></p>
                   </section>
                 </div>
-              <div className="column is-4 social">
+              <div className="column is-4 social" style={{marginTop:'1.5rem'}}>
                 <a title="facebook" href="https://www.facebook.com/autoecolesainteclotilde/">
                   <img
                     src={facebook}
